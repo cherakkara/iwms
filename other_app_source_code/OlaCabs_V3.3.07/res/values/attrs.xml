@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="font" format="string" />
+    <attr name="cardBackgroundColor" format="color" />
+    <attr name="cardCornerRadius" format="dimension" />
+    <attr name="cardElevation" format="dimension" />
+    <attr name="cardMaxElevation" format="dimension" />
+    <attr name="cardUseCompatPadding" format="boolean" />
+    <attr name="cardPreventCornerOverlap" format="boolean" />
+    <attr name="contentPadding" format="dimension" />
+    <attr name="contentPaddingLeft" format="dimension" />
+    <attr name="contentPaddingRight" format="dimension" />
+    <attr name="contentPaddingTop" format="dimension" />
+    <attr name="contentPaddingBottom" format="dimension" />
+    <attr name="floatLabelTextAppearance" format="reference" />
+    <attr name="floatLabelPaddingLeft" format="reference|dimension" />
+    <attr name="floatLabelPaddingRight" format="reference|dimension" />
+    <attr name="floatLabelPaddingTop" format="reference|dimension" />
+    <attr name="floatLabelPaddingBottom" format="reference|dimension" />
+    <attr name="floatLabelHint" format="reference|string" />
+    <attr name="imageAspectRatioAdjust">
+        <enum name="adjust_height" value="2" />
+        <enum name="adjust_width" value="1" />
+        <enum name="none" value="0" />
+    </attr>
+    <attr name="imageAspectRatio" format="float" />
+    <attr name="circleCrop" format="boolean" />
+    <attr name="mapType">
+        <enum name="none" value="0" />
+        <enum name="hybrid" value="4" />
+        <enum name="normal" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
+    <attr name="liteMode" format="boolean" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
+    <attr name="zOrderOnTop" format="boolean" />
+    <attr name="uiMapToolbar" format="boolean" />
+    <attr name="m4b_mapType">
+        <enum name="none" value="0" />
+        <enum name="hybrid" value="4" />
+        <enum name="normal" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
+    <attr name="m4b_cameraBearing" format="float" />
+    <attr name="m4b_cameraTargetLat" format="float" />
+    <attr name="m4b_cameraTargetLng" format="float" />
+    <attr name="m4b_cameraTilt" format="float" />
+    <attr name="m4b_cameraZoom" format="float" />
+    <attr name="m4b_liteMode" format="boolean" />
+    <attr name="m4b_uiCompass" format="boolean" />
+    <attr name="m4b_uiRotateGestures" format="boolean" />
+    <attr name="m4b_uiScrollGestures" format="boolean" />
+    <attr name="m4b_uiTiltGestures" format="boolean" />
+    <attr name="m4b_uiZoomControls" format="boolean" />
+    <attr name="m4b_uiZoomGestures" format="boolean" />
+    <attr name="m4b_useViewLifecycle" format="boolean" />
+    <attr name="m4b_zOrderOnTop" format="boolean" />
+    <attr name="m4b_uiMapToolbar" format="boolean" />
+    <attr name="strongColor" format="color" />
+    <attr name="poorColor" format="color" />
+    <attr name="mediumColor" format="color" />
+    <attr name="lineWidth" format="float" />
+    <attr name="umanoPanelHeight" format="dimension" />
+    <attr name="umanoShadowHeight" format="dimension" />
+    <attr name="umanoParalaxOffset" format="dimension" />
+    <attr name="umanoFadeColor" format="color" />
+    <attr name="umanoFlingVelocity" format="integer" />
+    <attr name="umanoDragView" format="reference" />
+    <attr name="umanoOverlay" format="boolean" />
+    <attr name="umanoClipPanel" format="boolean" />
+    <attr name="umanoAnchorPoint" format="float" />
+    <attr name="umanoInitialState">
+        <enum name="anchored" value="2" />
+        <enum name="collapsed" value="1" />
+        <enum name="expanded" value="0" />
+        <enum name="hidden" value="3" />
+    </attr>
+    <attr name="foreground_color" format="color" />
+    <attr name="object_id" format="string" />
+    <attr name="object_type">
+        <enum name="open_graph" value="1" />
+        <enum name="page" value="2" />
+        <enum name="unknown" value="0" />
+    </attr>
+    <attr name="style">
+        <enum name="box_count" value="2" />
+        <enum name="button" value="1" />
+        <enum name="standard" value="0" />
+    </attr>
+    <attr name="auxiliary_view_position">
+        <enum name="bottom" value="0" />
+        <enum name="inline" value="1" />
+        <enum name="top" value="2" />
+    </attr>
+    <attr name="horizontal_alignment">
+        <enum name="center" value="0" />
+        <enum name="left" value="1" />
+        <enum name="right" value="2" />
+    </attr>
+    <attr name="confirm_logout" format="boolean" />
+    <attr name="login_text" format="string" />
+    <attr name="logout_text" format="string" />
+    <attr name="preset_size">
+        <enum name="normal" value="-3" />
+        <enum name="large" value="-4" />
+        <enum name="small" value="-2" />
+    </attr>
+    <attr name="is_cropped" format="boolean" />
+</resources>

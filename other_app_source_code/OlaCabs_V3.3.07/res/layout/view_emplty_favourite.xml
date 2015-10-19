@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:id="@id/defaultDisplay" app:background="@color/ola_tab_background" app:layout_width="-1" app:layout_height="-1">
+    <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_centerInParent="true">
+        <ImageView app:layout_gravity="1" app:id="@id/defaultImageView" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/ic_fav_default" />
+        <View app:layout_width="-1" app:layout_height="@dimen/margin_large" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxlarge" app:textColor="@color/ola_vm_text_color" app:gravity="11" app:id="@id/defaultHeaderText" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_no_favourties" app:lineSpacingExtra="-4dp" app:font="@string/font_OpenSans_Light" />
+        <View app:layout_width="-1" app:layout_height="@dimen/margin_medium" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_vm_text_color" app:gravity="11" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_save_favourite" app:font="@string/font_OpenSans_Regular" />
+        <View app:layout_width="-1" app:layout_height="@dimen/alert_dialog_title_height" />
+    </LinearLayout>
+</RelativeLayout>

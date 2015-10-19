@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auto_driver_rating_reasons">
+        <item>Unprofessional behaviour</item>
+        <item>Rash driving</item>
+        <item>Driver overcharged</item>
+        <item>Delayed pickup</item>
+        <item>Denied Ola Money</item>
+        <item>Denied pickup</item>
+        <item>Drunk driving</item>
+    </string-array>
+    <string-array name="compass_directions">
+        <item>N</item>
+        <item>NE</item>
+        <item>E</item>
+        <item>SE</item>
+        <item>S</item>
+        <item>SW</item>
+        <item>W</item>
+        <item>NW</item>
+    </string-array>
+    <string-array name="driver_rating_reasons">
+        <item>Unprofessional behaviour</item>
+        <item>Rash driving</item>
+        <item>Poor cab quality</item>
+        <item>Driver overcharged</item>
+        <item>Drunk driving</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="full_compass_directions">
+        <item>north</item>
+        <item>northeast</item>
+        <item>east</item>
+        <item>southeast</item>
+        <item>south</item>
+        <item>southwest</item>
+        <item>west</item>
+        <item>northwest</item>
+    </string-array>
+    <string-array name="navigation_drawer_items">
+        <item>BOOK MY RIDE</item>
+        <item>MY RIDES</item>
+        <item>OLA MONEY</item>
+        <item>INVITE &amp; EARN</item>
+        <item>RATE CARD</item>
+        <item>EMERGENCY CONTACT</item>
+        <item>REPORT ISSUE</item>
+        <item>CALL SUPPORT</item>
+        <item>ABOUT</item>
+    </string-array>
+    <string-array name="navigation_drawer_items_no_earn">
+        <item>BOOK MY RIDE</item>
+        <item>MY RIDES</item>
+        <item>OLA MONEY</item>
+        <item>INVITE</item>
+        <item>RATE CARD</item>
+        <item>EMERGENCY CONTACT</item>
+        <item>REPORT ISSUE</item>
+        <item>ABOUT</item>
+    </string-array>
+    <string-array name="tfs_cancel_reasons">
+        <item>Driver denied duty</item>
+        <item>Driver not reachable</item>
+        <item>"I'm getting late"</item>
+        <item>Booked by mistake</item>
+    </string-array>
+</resources>

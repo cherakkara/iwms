@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <TextView android:id="@r/selectPaymentMethodTextView" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" android:text="@string/select_payment_method" />
+    <ListView android:id="@r/paymentOptionsListView" android:layout_width="-1" android:layout_height="-2" />
+</LinearLayout>

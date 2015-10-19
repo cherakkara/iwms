@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout app:layout_width="-1" app:layout_height="-2">
+    <RelativeLayout app:background="@drawable/edit_profile_bg" app:padding="@dimen/margin_small" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="@dimen/margin_xxlarge" app:layout_marginBottom="@dimen/margin_xxlarge">
+        <ImageView app:id="@id/user_pic" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:layout_marginTop="@dimen/margin_nano" app:src="@drawable/ic_profile" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_gray_text" app:ellipsize="3" app:id="@id/item_name" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:text="Text User" app:singleLine="true" app:layout_toRightOf="@id/user_pic" app:textIsSelectable="false" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:id="@id/arrow_item" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/ic_profile_arrow" app:layout_alignParentRight="true" />
+        <ImageView app:id="@id/alert_item" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:layout_marginRight="@dimen/margin_micro" app:src="@drawable/ic_profile_alert" app:layout_toLeftOf="@id/arrow_item" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_text" app:id="@id/item_mobile_number" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:text="+987654321" app:singleLine="true" app:layout_toRightOf="@id/user_pic" app:layout_below="@id/item_name" app:font="@string/font_OpenSans_Light" />
+    </RelativeLayout>
+</FrameLayout>

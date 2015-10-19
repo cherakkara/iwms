@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:paddingBottom="@dimen/margin_normal" app:layout_width="-1" app:layout_height="-2">
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxxlarge" app:textColor="@color/ola_pitch_black" app:id="@id/surcharge_amount" app:layout_width="-2" app:layout_height="-2" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Light" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_pitch_black" app:id="@id/surcharge_amount_text" app:layout_width="-2" app:layout_height="-2" app:layout_below="@id/surcharge_amount" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Regular" />
+    <LinearLayout app:gravity="11" app:orientation="0" app:id="@id/line_separator" app:layout_width="-1" app:layout_height="-2" app:layout_below="@id/surcharge_amount_text">
+        <View app:background="@color/ola_up_vm_text_color" app:layout_width="-2" app:layout_height="1dp" app:layout_marginLeft="@dimen/activity_horizontal_margin" app:layout_weight="0.4" />
+        <ImageView app:id="@id/image_separator" app:layout_width="-2" app:layout_height="-2" app:layout_margin="@dimen/margin_micro_small_micro" app:src="@drawable/ic_peak_charge_selected" />
+        <View app:background="@color/ola_up_vm_text_color" app:layout_width="-2" app:layout_height="1dp" app:layout_marginRight="@dimen/activity_horizontal_margin" app:layout_weight="0.4" />
+    </LinearLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:gravity="11" app:id="@id/surcharge_note1" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xxxlarge" app:layout_marginRight="@dimen/margin_xxxlarge" app:layout_marginBottom="@dimen/margin_normal" app:text="@string/notify_surcharge" app:layout_below="@id/line_separator" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Regular" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_light_text" app:id="@id/surcharge_note2" app:layout_width="-2" app:layout_height="-2" app:text="@string/surcharge_refer_note" app:layout_below="@id/surcharge_note1" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Regular" />
+</RelativeLayout>

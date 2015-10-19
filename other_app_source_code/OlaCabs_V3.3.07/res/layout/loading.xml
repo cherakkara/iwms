@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="@r/loading" android:background="@color/cb_background" android:layout_width="-2" android:layout_height="-2">
+    <View android:background="@color/cb_border" android:layout_width="-1" android:layout_height="1dp" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+        <RelativeLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+            <LinearLayout android:id="@r/header" android:layout_width="-1" android:layout_height="30dp" android:layout_alignParentTop="true">
+                <TextView android:textSize="@dimen/sixteenScaled" android:textColor="@color/cb_textColor" android:gravity="11" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="@dimen/eight" android:layout_marginBottom="@dimen/eight" android:drawableTop="@r/slider" />
+            </LinearLayout>
+            <LinearLayout android:gravity="11" android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="@dimen/sixteen" android:layout_centerInParent="true">
+                <include android:id="@r/progress" layout="@r/progressdialog" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textStyle="1" android:textColor="@color/cb_textColor" android:id="@r/waiting" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@dimen/twelve" android:layout_marginBottom="@dimen/eight" android:text="@r/bank_page_loading" />
+            </LinearLayout>
+            <LinearLayout android:gravity="50" android:layout_gravity="50" android:orientation="0" android:background="@r/rectangle_box" android:layout_width="-1" android:layout_height="30dp" android:weightSum="1.0" android:layout_alignParentBottom="true"
+                <LinearLayout android:gravity="3" android:orientation="0" android:layout_width="-1" android:layout_height="30dp" android:layout_weight="0.5">
+                    <TextView android:textSize="@dimen/twelveScaled" android:textStyle="1" android:textColor="@color/cb_textColor" android:gravity="11" android:layout_width="-2" android:layout_height="30dp" android:layout_marginLeft="@dimen/eight" android:drawableRight="@r/trusticon" android:drawablePadding="@dimen/four" />
+                    <TextView android:textSize="15sp" android:textStyle="0" android:textColor="@color/cb_textColor" android:gravity="10" android:layout_width="-2" android:layout_height="30dp" android:layout_marginLeft="@dimen/four" android:text="Powered by" android:drawablePadding="@dimen/four" />
+                    <TextView android:textSize="@dimen/twelveScaled" android:textStyle="1" android:textColor="@color/cb_textColor" android:gravity="11" android:layout_width="-2" android:layout_height="20dp" android:layout_marginLeft="@dimen/four" android:drawableLeft="@r/logo_payu" android:drawablePadding="@dimen/four" />
+                </LinearLayout>
+                <LinearLayout android:gravity="5" android:layout_gravity="5" android:layout_width="-1" android:layout_height="-1" android:layout_weight="0.5">
+                    <ImageView android:layout_gravity="15" android:id="@r/bank_logo" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="-2" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

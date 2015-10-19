@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:gravity="1" app:orientation="1" app:padding="@dimen/margin_micro" app:layout_width="@dimen/category_width" app:layout_height="-1">
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/cab_category_item_text" app:id="@id/item_eta" app:duplicateParentState="true" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Regular" />
+    <FrameLayout app:orientation="1" app:layout_width="@dimen/category_width" app:layout_height="-2">
+        <ImageView app:layout_gravity="11" app:id="@id/item_icon" app:duplicateParentState="true" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/bg_button_category_mini" />
+        <ImageView app:layout_gravity="800005" app:id="@id/item_surcharge_icon" app:visibility="2" app:duplicateParentState="true" app:layout_width="-2" app:layout_height="-2" app:layout_marginRight="@dimen/margin_nano" app:src="@drawable/bg_surcharge_icon" />
+    </FrameLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@color/cab_category_item_text" app:id="@id/item_name" app:duplicateParentState="true" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_sedan" app:textAllCaps="true" app:font="@string/font_OpenSans_Regular" />
+</LinearLayout>

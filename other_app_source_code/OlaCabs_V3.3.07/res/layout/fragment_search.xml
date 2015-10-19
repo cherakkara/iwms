@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+    <RelativeLayout app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:layout_marginBottom="@dimen/margin_small"
+        <RelativeLayout app:layout_gravity="1" app:orientation="0" app:id="@id/searchView" app:background="@color/ola_grey_light_searchbar_background" app:paddingTop="@dimen/margin_micro" app:paddingBottom="@dimen/margin_micro" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small">
+            <com.olacabs.customer.ui.widgets.FontTextView app:id="@id/searchCross" app:background="@drawable/ic_search_cancel" app:visibility="1" app:layout_width="-2" app:layout_height="-2" app:layout_marginRight="@dimen/margin_small" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+            <com.olacabs.customer.ui.widgets.FontEditText app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:textColorHint="@color/ola_gray_light_searchtext" app:ellipsize="3" app:id="@id/searchEdit" app:background="0x106000d" app:paddingLeft="5dp" app:paddingTop="@dimen/margin_micro" app:paddingRight="@dimen/margin_micro" app:paddingBottom="@dimen/margin_micro" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="7dp" app:hint="@string/search" app:singleLine="true" app:drawableLeft="@drawable/ic_search_icon" app:drawablePadding="@dimen/margin_micro" app:layout_toLeftOf="@id/searchCross" app:layout_centerVertical="true" app:inputType="1" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Regular" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View app:background="@color/ola_yellow_light_header_line" app:layout_width="-1" app:layout_height="1px" />
+    <ViewStub app:id="@id/stub_sad_error" app:layout="@layout/view_sad_error" app:inflatedId="@id/saderrorface" app:layout_width="-1" app:layout_height="-1" app:layout_centerInParent="true" />
+    <RelativeLayout app:id="@id/main_search_layout" app:layout_width="-1" app:layout_height="-1">
+        <ImageView app:id="@id/googleLogo" app:padding="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/google_logo" app:layout_alignParentBottom="true" app:layout_centerHorizontal="true" />
+        <ListView app:id="@id/searchList" app:visibility="2" app:layout_width="-1" app:layout_height="-1" app:layout_above="@id/googleLogo" />
+    </RelativeLayout>
+    <ProgressBar app:layout_gravity="11" app:id="@id/progressBar_loading" app:visibility="0" app:layout_width="-2" app:layout_height="-1" app:indeterminateDrawable="@drawable/custom_progress_background" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/topBarLayout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/rideTitle" app:background="@color/ola_white" app:padding="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:text="@string/title_activity_rides" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:id="@id/menuDrawerImageView" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:src="@drawable/bg_button_nav_menu" />
+    </FrameLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:background="@color/ola_yellow_light_header_line" app:layout_width="-1" app:layout_height="1px" />
+    <TabHost app:id="@id/tabhost" app:layout_width="-1" app:layout_height="-1">
+        <ProgressBar app:layout_gravity="11" app:id="@id/emptyView" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:indeterminateDrawable="@drawable/custom_progress_background" />
+        <ViewStub app:id="@id/stub_sad_error" app:layout="@layout/view_sad_error" app:inflatedId="@id/sad_error_face" app:layout_width="-1" app:layout_height="-1" app:layout_centerInParent="true" />
+        <LinearLayout app:orientation="1" app:id="@id/tabLayout" app:visibility="2" app:layout_width="-1" app:layout_height="-1">
+            <TabWidget app:orientation="0" app:id="0x1020013" app:background="@color/ola_tab_background" app:layout_width="-1" app:layout_height="35dp" />
+            <FrameLayout app:id="0x1020011" app:layout_width="0dp" app:layout_height="0dp" app:layout_weight="0.0" />
+            <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="@dimen/margin_micro">
+                <com.olacabs.customer.ui.widgets.FontTextView app:id="@id/tab1Select" app:background="@drawable/bg_tab_rides_category" app:layout_width="-1" app:layout_height="@dimen/margin_micro" app:layout_weight="1.0" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:id="@id/tab2Select" app:background="@drawable/bg_tab_rides_category" app:layout_width="-1" app:layout_height="@dimen/margin_micro" app:layout_weight="1.0" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:id="@id/tab3Select" app:background="@drawable/bg_tab_rides_category" app:layout_width="-1" app:layout_height="@dimen/margin_micro" app:layout_weight="1.0" />
+            </LinearLayout>
+            <com.olacabs.customer.ui.widgets.FontTextView app:background="@color/ola_light_tab_strip" app:layout_width="-1" app:layout_height="1px" />
+            <RelativeLayout app:layout_width="-1" app:layout_height="0dp" app:layout_weight="1.0">
+                <android.support.v4.view.ViewPager app:id="@id/pager" app:layout_width="-1" app:layout_height="-1" />
+            </RelativeLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

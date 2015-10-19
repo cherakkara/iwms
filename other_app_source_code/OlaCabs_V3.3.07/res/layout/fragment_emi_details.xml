@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:paddingTop="10dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/pay_by_emi" />
+        <Spinner android:id="@r/bankListSpinner" android:focusable="true" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" />
+        <Spinner android:id="@r/emiTimeIntervalSpinner" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" />
+        <include layout="@r/card_details_layout" />
+        <Button android:enabled="false" android:textStyle="1" android:textColor="@color/white" android:layout_gravity="11" android:id="@r/makePayment" android:background="@r/button" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="@string/pay_now" />
+    </LinearLayout>
+</ScrollView>

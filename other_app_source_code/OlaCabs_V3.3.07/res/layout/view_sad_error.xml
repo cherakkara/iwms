@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:gravity="11" app:id="@id/saderrorface" app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+    <ImageView app:id="@id/failed_sad_face" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="@dimen/margin_medium" app:src="@drawable/sad_face" app:layout_centerHorizontal="true" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_sign_up_header_text" app:gravity="11" app:id="@id/no_internet_error_text" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xlarge" app:layout_marginRight="@dimen/margin_xlarge" app:text="@string/no_internet_sadface" app:layout_below="@id/failed_sad_face" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Semibold" />
+</RelativeLayout>

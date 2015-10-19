@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:layout_width="-1" app:layout_height="-1">
+    <LinearLayout app:orientation="0" app:id="@id/main_layout" app:layout_width="-2" app:layout_height="-2" app:layout_centerInParent="true">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxxxxlarge" app:textColor="@color/ola_black_text" app:id="@id/item_duration" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_timer" app:font="@string/font_OpenSans_Regular" />
+        <LinearLayout app:gravity="11" app:orientation="1" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_medium">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_black_text" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_sec" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_black_text" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_timer_left" app:font="@string/font_OpenSans_Regular" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

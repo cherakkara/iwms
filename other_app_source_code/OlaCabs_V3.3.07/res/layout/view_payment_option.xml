@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="@color/ola_white" android:paddingLeft="@dimen/margin_medium" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:layout_width="-1" android:layout_height="-2">
+    <RadioButton android:textColor="@color/ola_black_text" android:id="@id/payment_option_button" android:paddingLeft="@dimen/margin_medium" android:focusable="false" android:clickable="false" android:layout_width="-2" android:layout_height="-2" android:button="@drawable/radio_button_payment_option" android:text="@string/text_debit_card" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@drawable/bg_dialog_white" app:layout_width="-1" app:layout_height="-2"
+    <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xxxlarge" app:layout_marginRight="@dimen/margin_xxxlarge">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:gravity="11" app:layout_gravity="1" app:id="@id/item_header" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large" app:layout_marginTop="@dimen/margin_xxxlarge" app:layout_marginRight="@dimen/margin_large" app:layout_marginBottom="@dimen/margin_small" app:text="@string/text_add_landmark" app:font="@string/font_OpenSans_Regular" />
+        <View app:background="@color/ola_green_flurescent_light_text" app:layout_width="-1" app:layout_height="1dp" app:layout_marginBottom="@dimen/margin_xxxlarge" />
+        <com.olacabs.customer.ui.widgets.FontEditText app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:textColorHint="@color/ola_vm_text_color" app:ellipsize="3" app:gravity="3" app:id="@id/edit_text_pickup" app:background="0x106000d" app:paddingLeft="@dimen/margin_small" app:paddingRight="@dimen/margin_small" app:layout_width="-1" app:layout_height="-2" app:hint="@string/hint_enter_landmark" app:cursorVisible="true" app:singleLine="true" app:inputType="80001" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Regular">
+            <requestFocus />
+        </com.olacabs.customer.ui.widgets.FontEditText>
+        <View app:background="@color/ola_gray_light_searchLine" app:layout_width="-1" app:layout_height="1dp" app:layout_marginTop="@dimen/margin_micro_small" app:layout_marginBottom="@dimen/margin_xxlarge" />
+        <com.olacabs.customer.ui.widgets.FontEditText app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:textColorHint="@color/ola_vm_text_color" app:ellipsize="3" app:gravity="3" app:id="@id/edit_text_drop" app:background="0x106000d" app:paddingLeft="@dimen/margin_small" app:paddingRight="@dimen/margin_small" app:layout_width="-1" app:layout_height="-2" app:hint="@string/text_enter_drop_landmark" app:cursorVisible="true" app:singleLine="true" app:inputType="80001" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Regular">
+            <requestFocus />
+        </com.olacabs.customer.ui.widgets.FontEditText>
+        <View app:background="@color/ola_gray_light_searchLine" app:layout_width="-1" app:layout_height="1dp" app:layout_marginTop="@dimen/margin_micro_small" app:layout_marginBottom="@dimen/margin_xxlarge" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_black_text" app:gravity="11" app:layout_gravity="1" app:id="@id/help_text" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="@dimen/margin_large" app:font="@string/font_OpenSans_Regular" />
+    </LinearLayout>
+    <LinearLayout app:orientation="0" app:background="@drawable/bg_button_rounded_bottom" app:layout_width="-1" app:layout_height="-2">
+        <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_black_button_selector" app:id="@id/button_cancel" app:background="@drawable/bg_button_rounded_left" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_cancel" app:layout_weight="1.0" app:textAllCaps="true" app:font="@string/font_OpenSans_Regular" />
+        <View app:background="@color/ola_green_flurescent_text" app:layout_width="1dp" app:layout_height="-1" app:alpha="0.2" />
+        <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_black_button_selector" app:id="@id/button_action" app:background="@drawable/bg_button_rounded_right" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_ok_caps" app:layout_weight="1.0" app:textAllCaps="true" app:font="@string/font_OpenSans_Regular" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:id="@id/main_bg" app:background="@drawable/ic_launch_background_lurred" app:clickable="true" app:layout_width="-1" app:layout_height="-1">
+    <LinearLayout app:orientation="0" app:id="@id/action_bar_layout" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb" app:weightSum="100.0">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="#cccccc" app:gravity="15" app:layout_gravity="10" app:id="@id/action_bar_view" app:layout_width="-2" app:layout_height="-1" app:text="@string/create_account" app:layout_weight="70.0" app:font="@string/font_OpenSans_Light" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@drawable/text_green_text_selector" app:gravity="15" app:id="@id/sign_up" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:text="@string/sign_up" app:layout_weight="30.0" app:font="@string/font_OpenSans_Light" />
+    </LinearLayout>
+    <View app:id="@id/line_view" app:background="@color/ola_green_flurescent_line_transparent" app:layout_width="-1" app:layout_height="1dp" app:layout_below="@id/action_bar_layout" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_white" app:id="@id/error_text" app:background="@color/ola_red_dark" app:padding="@dimen/margin_micro" app:visibility="2" app:layout_below="@id/line_view" app:font="@string/font_OpenSans_Light" style="@style/h_block" />
+    <ScrollView app:id="@id/sign_up_scroll_view" app:layout_width="-1" app:layout_height="-1" app:layout_below="@id/error_text">
+        <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2"
+            <LinearLayout app:orientation="1" app:id="@id/sign_up_layout" app:background="@drawable/bg_signup_block" app:layout_width="-1" app:layout_height="-2" app:layout_margin="@dimen/margin_small_medium">
+                <com.olacabs.customer.ui.widgets.FontTextView app:id="@id/errorText" app:visibility="2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" style="@style/errorText" />
+                <com.olacabs.customer.ui.widgets.FloatLabelLayout app:id="@id/email_txt_float" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" app:floatLabelTextAppearance="@style/TextAppearance.FloatLabel">
+                    <com.olacabs.customer.ui.widgets.FontAutoCompleteTextView app:id="@id/email_txt" app:hint="@string/enter_email" app:ems="10" app:inputType="21" app:imeOptions="5" app:font="@string/font_OpenSans_Regular" style="@style/ola_new_edit_text" />
+                </com.olacabs.customer.ui.widgets.FloatLabelLayout>
+                <com.olacabs.customer.ui.widgets.FloatLabelLayout app:id="@id/password_txt_float" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" app:floatLabelTextAppearance="@style/TextAppearance.FloatLabel">
+                    <com.olacabs.customer.ui.widgets.FontEditText app:id="@id/password_txt" app:hint="@string/set_password" app:ems="10" app:inputType="81" app:imeOptions="5" app:font="@string/font_OpenSans_Regular" style="@style/ola_new_edit_text" />
+                </com.olacabs.customer.ui.widgets.FloatLabelLayout>
+                <com.olacabs.customer.ui.widgets.FloatLabelLayout app:id="@id/re_enter_password_txt_float" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" app:floatLabelTextAppearance="@style/TextAppearance.FloatLabel">
+                    <com.olacabs.customer.ui.widgets.FontEditText app:id="@id/re_enter_password_txt" app:hint="@string/re_enter_pwd" app:ems="10" app:inputType="81" app:imeOptions="5" app:font="@string/font_OpenSans_Regular" style="@style/ola_new_edit_text" />
+                </com.olacabs.customer.ui.widgets.FloatLabelLayout>
+                <com.olacabs.customer.ui.widgets.FloatLabelLayout app:id="@id/name_txt_float" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" app:floatLabelTextAppearance="@style/TextAppearance.FloatLabel">
+                    <com.olacabs.customer.ui.widgets.FontEditText app:id="@id/name_txt" app:hint="@string/full_name" app:ems="10" app:maxLength="30" app:digits="@string/profile_name_chars" app:inputType="2001" app:imeOptions="5" app:font="@string/font_OpenSans_Regular" style="@style/ola_new_edit_text" />
+                </com.olacabs.customer.ui.widgets.FloatLabelLayout>
+                <com.olacabs.customer.ui.widgets.FloatLabelLayout app:id="@id/phone_number_txt_float" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" app:floatLabelTextAppearance="@style/TextAppearance.FloatLabel">
+                    <com.olacabs.customer.ui.widgets.FontEditText app:id="@id/phone_number_txt" app:hint="@string/enter_phone_number" app:maxLength="10" app:inputType="3" app:imeOptions="5" app:font="@string/font_OpenSans_Regular" style="@style/ola_new_edit_text" />
+                </com.olacabs.customer.ui.widgets.FloatLabelLayout>
+                <RelativeLayout app:layout_marginLeft="@dimen/margin_normal" app:layout_marginRight="@dimen/margin_small" app:layout_marginBottom="@dimen/margin_xlarge" style="@style/h_block">
+                    <com.olacabs.customer.ui.widgets.FloatLabelLayout app:layout_width="-1" app:layout_height="-2" app:floatLabelTextAppearance="@style/TextAppearance.FloatLabel">
+                        <com.olacabs.customer.ui.widgets.FontEditText app:id="@id/referral_code_txt" app:hint="@string/enter_referral_code" app:inputType="1001" app:imeOptions="2" app:font="@string/font_OpenSans_Regular" style="@style/ola_new_edit_text" />
+                    </com.olacabs.customer.ui.widgets.FloatLabelLayout>
+                    <ImageView app:id="@id/question_mark" app:paddingRight="@dimen/margin_micro_small" app:layout_marginTop="@dimen/margin_medium" app:src="@drawable/ic_signup_refferal" app:layout_alignParentRight="true" app:layout_centerVertical="true" style="@style/wrap" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout app:layout_gravity="1" app:orientation="1" app:layout_marginLeft="@dimen/margin_small_medium" app:layout_marginTop="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" style="@style/h_block">
+                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_white" app:gravity="11" app:id="@id/agreement_txt1" app:text="By continuing, I agree to OLA's " app:font="@string/font_OpenSans_Light" style="@style/h_block" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_light_text" app:gravity="11" app:linksClickable="true" app:id="@id/agreement_txt2" app:font="@string/font_OpenSans_Light" style="@style/h_block" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include app:id="@id/view_no_network_state" app:layout_width="-1" app:layout_height="@dimen/splash_screen_bottom_action_height" app:layout_alignParentBottom="true" layout="@layout/view_no_network_state" />
+</RelativeLayout>

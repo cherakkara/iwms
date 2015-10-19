@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_white" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:visibility="2" app:layout_width="-1" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_medium" app:layout_marginBottom="@dimen/margin_medium">
+    <RelativeLayout app:gravity="10" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:textColorHint="@color/ola_gray_light_searchtext" app:id="@id/selectBankText" app:background="@drawable/bg_payment_cell" app:paddingLeft="@dimen/margin_normal" app:paddingTop="@dimen/margin_medium" app:paddingRight="@dimen/margin_normal" app:paddingBottom="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_select_bank" app:singleLine="true" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Regular" />
+        <ImageView app:layout_width="-2" app:layout_height="-2" app:layout_marginRight="@dimen/margin_normal" app:src="@drawable/drop_down" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@color/ola_gray_light_text" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:layout_marginTop="@dimen/margin_micro" app:text="@string/text_redirect_bank" app:font="@string/font_OpenSans_Regular" />
+</LinearLayout>

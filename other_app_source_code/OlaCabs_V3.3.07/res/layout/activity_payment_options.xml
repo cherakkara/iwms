@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="0" android:id="@r/headerLayout" android:background="@color/white" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010040" android:textStyle="1" android:gravity="11" android:id="@r/amountTextView" android:paddingTop="64dp" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010040" android:textStyle="1" android:id="@r/offerAmountTextView" android:paddingTop="64dp" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:gravity="11" android:id="@r/offerMessageTextView" android:background="@color/white" android:paddingBottom="64dp" android:layout_width="-1" android:layout_height="-2" android:layout_below="@r/headerLayout" />
+    <LinearLayout android:orientation="1" android:id="@r/fragmentContainer" android:layout_width="-1" android:layout_height="-1" android:layout_below="@r/offerMessageTextView" />
+</RelativeLayout>

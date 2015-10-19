@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:background="@color/ola_transparent" app:paddingTop="@dimen/margin_micro_small" app:paddingBottom="@dimen/margin_micro_small" app:layout_width="-1" app:layout_height="-2">
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small1" app:textColor="@color/ola_pitch_black" app:id="@id/item_name" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="@dimen/margin_nano" app:font="@string/font_OpenSans_Regular" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall1" app:textColor="@color/ola_sign_up_header_text" app:id="@id/restaurant_name" app:layout_width="-2" app:layout_height="-2" app:layout_below="@id/item_name" app:font="@string/font_OpenSans_Regular" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small1" app:textColor="@color/ola_pitch_black" app:id="@id/price_amount" app:layout_width="-2" app:layout_height="-2" app:layout_below="@id/item_name" app:layout_alignParentRight="true" app:font="@string/font_OpenSans_Regular" />
+</RelativeLayout>

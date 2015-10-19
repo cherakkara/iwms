@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout app:layout_width="-1" app:layout_height="-1">
+    <ListView app:id="@id/list" app:layout_width="-1" app:layout_height="-1" app:divider="0x106000d" />
+    <ProgressBar app:layout_gravity="11" app:id="@id/emptyView" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:indeterminateDrawable="@drawable/custom_progress_background" />
+    <RelativeLayout app:gravity="11" app:id="@id/defaultDisplay" app:background="@color/ola_tab_background" app:visibility="0" app:layout_width="-1" app:layout_height="-1">
+        <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="-30dp">
+            <ImageView app:layout_gravity="1" app:id="@id/defaultImageView" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/ic_rides_default" />
+            <View app:layout_width="-1" app:layout_height="@dimen/margin_xlarge" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxlarge" app:textColor="@color/ola_vm_text_color" app:gravity="11" app:id="@id/defaultHeaderText" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_no_rides" app:font="@string/font_OpenSans_Light" />
+            <View app:layout_width="-1" app:layout_height="@dimen/margin_medium" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_vm_text_color" app:gravity="11" app:id="@id/rideTextMessage" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_try_ola" app:font="@string/font_OpenSans_Regular" />
+            <View app:layout_width="-1" app:layout_height="@dimen/margin_xlarge" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_light_tab_strip" app:gravity="11" app:id="@id/defaultSubText" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_book_ride" app:font="@string/font_OpenSans_Regular" />
+            <View app:layout_width="-1" app:layout_height="@dimen/alert_dialog_title_height" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

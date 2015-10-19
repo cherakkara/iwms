@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:orientation="1" app:background="@drawable/ic_launch_background_lurred" app:layout_width="-1" app:layout_height="-1">
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="-1" android:layout_height="-1" />
+    <ImageView android:id="@id/page_indicator_image" android:paddingBottom="@dimen/activity_horizontal_margin" android:layout_width="-2" android:layout_height="-2" android:src="@drawable/saftey_asset_dot_0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.olacabs.customer.ui.widgets.FontTextView android:textSize="@dimen/xsmall" android:textColor="@color/ola_yellow_light_text_link" android:id="@id/done_text" android:padding="@dimen/margin_medium_large" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:text="DONE" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:font="@string/font_OpenSans_Semibold" />
+</RelativeLayout>

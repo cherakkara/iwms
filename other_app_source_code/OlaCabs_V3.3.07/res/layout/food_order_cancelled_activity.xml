@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/topBarLayout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/rideTitle" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/order_cancelled" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:id="@id/food_cancelled_back" app:layout_width="-2" app:layout_height="-2" app:layout_margin="@dimen/margin_medium" app:src="@drawable/ic_ola_yellow_back" />
+        <View app:layout_gravity="50" app:background="@color/ola_green_fluorescent_line" app:layout_width="-1" app:layout_height="1dp" />
+    </FrameLayout>
+    <RelativeLayout app:gravity="11" app:id="@id/order_cancelled_call_support" app:background="@drawable/bg_payu_buttons" app:layout_width="-1" app:layout_height="50dp" app:layout_alignParentBottom="true">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@drawable/text_black_button_selector" app:gravity="11" app:layout_width="-2" app:layout_height="-2" app:text="@string/order_cancelled_call_support" app:drawableLeft="@drawable/food_track_phone" app:drawablePadding="@dimen/margin_normal" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView app:layout_width="-1" app:layout_height="-1" app:fillViewport="true" app:layout_above="@id/order_cancelled_call_support" app:layout_below="@id/topBarLayout">
+        <RelativeLayout app:paddingBottom="@dimen/margin_list_item" app:layout_width="-1" app:layout_height="-1">
+            <ImageView app:id="@id/order_cancelled_icon" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_xxxxlarge" app:src="@drawable/sad_face" app:scaleType="6" app:layout_centerHorizontal="true" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xlarge" app:textColor="@color/ola_pitch_black" app:gravity="11" app:id="@id/order_cancelled_sorry" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xxxxxlarge" app:layout_marginTop="@dimen/margin_normal" app:layout_marginRight="@dimen/margin_xxxxxlarge" app:layout_marginBottom="@dimen/margin_normal" app:text="@string/text_could_not_serve" app:layout_below="@id/order_cancelled_icon" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Semibold" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small1" app:textColor="@color/ola_sign_up_header_text" app:gravity="11" app:id="@id/order_cancelled_subtext" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xxxxxlarge" app:layout_marginTop="5dp" app:layout_marginRight="@dimen/margin_xxxxxlarge" app:layout_marginBottom="5dp" app:text="blah blah dsfasdf sadfasdf sdafasdf asdfasdfasdfasd" app:layout_below="@id/order_cancelled_sorry" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_sign_up_header_text" app:gravity="51" app:id="@id/order_cancelled_note" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xxxxxlarge" app:layout_marginRight="@dimen/margin_xxxxxlarge" app:text="@string/text_speak_to_customer_care" app:layout_below="@id/order_cancelled_subtext" app:layout_alignParentBottom="true" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Regular" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

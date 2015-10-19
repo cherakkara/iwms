@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.olacabs.customer.ui.widgets.FontTextView android:textColor="@color/ola_black" android:orientation="1" android:padding="@dimen/margin_medium" android:layout_width="-1" android:layout_height="-1" />

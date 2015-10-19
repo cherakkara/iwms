@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="0" app:padding="@dimen/margin_large" app:layout_width="-1" app:layout_height="-2">
+    <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_black_text" app:id="@id/item_name" app:layout_width="0dp" app:layout_height="-2" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_gray_text" app:id="@id/item_joined" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_joined" app:font="@string/font_OpenSans_Regular" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_black_text" app:id="@id/item_amount" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Regular" />
+</LinearLayout>

@@ -1,0 +1,92 @@
+package com.google.android.m4b.maps.bx;
+
+import android.support.v4.media.TransportMediator;
+import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
+import com.google.android.m4b.maps.bz.Activities;
+import com.google.android.m4b.maps.bz.Common;
+import com.google.android.m4b.maps.p046d.ProtoBuf;
+import com.google.android.m4b.maps.p046d.ProtoBufType;
+import com.google.android.m4b.maps.p054p.Primitives;
+import org.apache.http.HttpStatus;
+
+/* renamed from: com.google.android.m4b.maps.bx.b */
+public final class Search {
+    public static final ProtoBufType f6828a;
+    private static ProtoBufType f6829b;
+    private static ProtoBufType f6830c;
+    private static ProtoBufType f6831d;
+    private static ProtoBufType f6832e;
+    private static ProtoBufType f6833f;
+    private static ProtoBufType f6834g;
+    private static ProtoBufType f6835h;
+    private static ProtoBufType f6836i;
+    private static ProtoBufType f6837j;
+    private static ProtoBufType f6838k;
+    private static ProtoBufType f6839l;
+    private static ProtoBufType f6840m;
+    private static ProtoBufType f6841n;
+    private static ProtoBufType f6842o;
+    private static ProtoBufType f6843p;
+    private static ProtoBufType f6844q;
+    private static ProtoBufType f6845r;
+    private static ProtoBufType f6846s;
+    private static ProtoBufType f6847t;
+    private static ProtoBufType f6848u;
+    private static ProtoBufType f6849v;
+    private static ProtoBufType f6850w;
+    private static ProtoBufType f6851x;
+    private static ProtoBufType f6852y;
+
+    static {
+        f6829b = new ProtoBufType();
+        f6830c = new ProtoBufType();
+        f6831d = new ProtoBufType();
+        f6832e = new ProtoBufType();
+        f6833f = new ProtoBufType();
+        f6834g = new ProtoBufType();
+        f6835h = new ProtoBufType();
+        f6836i = new ProtoBufType();
+        f6837j = new ProtoBufType();
+        f6838k = new ProtoBufType();
+        f6839l = new ProtoBufType();
+        f6840m = new ProtoBufType();
+        f6841n = new ProtoBufType();
+        f6842o = new ProtoBufType();
+        f6843p = new ProtoBufType();
+        f6828a = new ProtoBufType();
+        f6844q = new ProtoBufType();
+        f6845r = new ProtoBufType();
+        f6846s = new ProtoBufType();
+        f6847t = new ProtoBufType();
+        f6848u = new ProtoBufType();
+        f6849v = new ProtoBufType();
+        f6850w = new ProtoBufType();
+        f6851x = new ProtoBufType();
+        f6852y = new ProtoBufType();
+        f6829b.m10219a(286, 1, null).m10219a(292, 2, null).m10219a(539, 3, Geometry.f7068e).m10219a(533, 4, Primitives.m11085a(0)).m10219a(533, 5, Primitives.m11085a(9)).m10219a(536, 6, ProtoBuf.f7298b).m10219a(536, 7, ProtoBuf.f7297a).m10219a(536, 8, ProtoBuf.f7297a).m10219a(547, 9, null).m10219a(539, 12, ClientCapabilities.f6951a).m10219a(536, 14, ProtoBuf.f7297a).m10219a(536, 15, ProtoBuf.f7297a).m10219a(542, 16, null).m10219a(536, 17, ProtoBuf.f7297a).m10219a(536, 18, ProtoBuf.f7297a).m10219a(536, 19, ProtoBuf.f7297a).m10219a(533, 68, null).m10219a(533, 69, null).m10219a(536, 20, ProtoBuf.f7298b).m10219a(536, 24, ProtoBuf.f7298b).m10219a(533, 21, Primitives.m11085a(0)).m10219a(533, 22, Primitives.m11085a(128)).m10219a(536, 23, ProtoBuf.f7298b).m10219a(536, 25, ProtoBuf.f7297a).m10219a(536, 26, ProtoBuf.f7297a).m10219a(1051, 27, Geometry.f7067d).m10219a(539, 28, Geometry.f7069f).m10219a(536, 29, null).m10219a(536, 30, ProtoBuf.f7297a).m10219a(536, 31, ProtoBuf.f7297a).m10219a(536, 32, ProtoBuf.f7297a).m10219a(536, 33, ProtoBuf.f7297a).m10219a(539, 35, ac.f6810a).m10219a(536, 36, ProtoBuf.f7297a).m10219a(539, 37, Friends.f7037a).m10219a(536, 38, ProtoBuf.f7297a).m10219a(1051, 39, f6842o).m10219a(536, 40, ProtoBuf.f7297a).m10219a(1045, 41, null).m10219a(536, 42, ProtoBuf.f7297a).m10219a(536, 43, ProtoBuf.f7297a).m10219a(1051, 44, f6831d).m10219a(1051, 45, f6831d).m10219a(536, 46, ProtoBuf.f7297a).m10219a(536, 47, ProtoBuf.f7297a).m10219a(542, 48, null).m10219a(536, 49, ProtoBuf.f7297a).m10219a(536, 50, ProtoBuf.f7297a).m10219a(536, 51, ProtoBuf.f7297a).m10219a(536, 52, ProtoBuf.f7297a).m10219a(536, 53, ProtoBuf.f7297a).m10219a(536, 54, ProtoBuf.f7297a).m10219a(539, 55, f6852y).m10219a(539, 56, aa.f6808a).m10219a(1051, 57, f6832e).m10219a(539, 58, ad.f6816a).m10219a(536, 60, null).m10219a(536, 61, ProtoBuf.f7297a).m10219a(548, 62, null).m10219a(542, 66, Primitives.m11085a(0)).m10219a(548, 67, null);
+        f6830c.m10219a(286, 1, null).m10219a(548, 2, null).m10219a(548, 3, null).m10219a(548, 4, null).m10219a(536, 5, ProtoBuf.f7297a).m10219a(548, 6, null).m10219a(539, 7, Geometry.f7068e).m10219a(1051, 8, f6828a).m10219a(1051, 9, f6834g).m10219a(533, 11, Primitives.m11085a(0)).m10219a(533, 12, Primitives.m11085a(0)).m10219a(533, 13, Primitives.m11085a(-1)).m10219a(548, 14, null).m10219a(548, 15, null).m10219a(1051, 16, f6828a).m10219a(1060, 17, null).m10219a(1051, 18, f6831d).m10219a(539, 19, Base.f6940b).m10219a(1051, 20, ad.f6816a).m10219a(1051, 21, f6832e).m10219a(548, 22, null).m10219a(536, 23, ProtoBuf.f7297a).m10219a(536, 24, ProtoBuf.f7298b).m10219a(542, 25, null).m10219a(533, 26, Primitives.m11085a(5));
+        f6831d.m10219a(542, 1, null).m10219a(548, 2, null).m10219a(1051, 3, f6833f);
+        f6832e.m10219a(542, 1, null).m10219a(548, 2, null).m10219a(548, 3, null).m10219a(548, 4, null);
+        f6833f.m10219a(533, 1, null).m10219a(548, 2, null).m10219a(548, 3, null);
+        f6834g.m10219a(1060, 1, null).m10219a(548, 2, null).m10219a(548, 3, null).m10219a(548, 4, null).m10219a(548, 5, null).m10219a(548, 6, null).m10219a(548, 7, null).m10219a(548, 8, null).m10219a(533, 9, null);
+        f6835h.m10219a(548, 1, null).m10219a(286, 2, null).m10219a(547, 3, null);
+        f6836i.m10219a(548, 1, null).m10219a(548, 2, null);
+        f6837j.m10219a(548, 1, null).m10219a(548, 2, null).m10219a(1060, 3, null).m10219a(539, 4, Base.f6939a).m10219a(539, 5, Base.f6939a).m10219a(548, 7, null);
+        f6838k.m10219a(292, 1, null).m10219a(292, 2, null).m10219a(548, 3, null).m10219a(548, 4, null);
+        f6839l.m10219a(548, 1, null).m10219a(548, 2, null).m10219a(548, 3, null);
+        f6840m.m10219a(1051, 1, f6836i).m10219a(548, 2, null).m10219a(1051, 3, f6837j).m10219a(1051, 4, f6838k).m10219a(1051, 5, f6839l).m10219a(539, 6, TransitInfo.f6903a).m10219a(548, 7, null).m10219a(539, 8, f6841n).m10219a(548, 10, null);
+        f6841n.m10219a(536, 1, null).m10219a(531, 2, null).m10219a(548, 3, null).m10219a(533, 4, null);
+        f6842o.m10219a(548, 1, null).m10219a(548, 2, null);
+        f6843p.m10219a(533, 1, Primitives.m11085a(0)).m10219a(548, 2, null).m10219a(548, 3, null).m10219a(548, 4, null).m10219a(547, 5, null).m10219a(547, 6, null);
+        f6828a.m10219a(286, 1, null).m10219a(548, 2, null).m10219a(539, 3, Geometry.f7067d).m10219a(1060, 4, null).m10219a(548, 11, null).m10219a(1050, 12, f6844q).m10219a(1050, 18, f6845r).m10219a(536, 22, ProtoBuf.f7298b).m10219a(548, 23, null).m10219a(548, 24, null).m10219a(538, 90, f6846s).m10219a(1051, 100, f6835h).m10219a(539, HttpStatus.SC_SWITCHING_PROTOCOLS, Address.f6807a).m10219a(548, HttpStatus.SC_PROCESSING, null).m10219a(538, 110, f6847t).m10219a(538, 70, f6848u).m10219a(548, 117, null).m10219a(539, 118, ab.f6809a).m10219a(534, 119, null).m10219a(542, 120, null).m10219a(536, 123, ProtoBuf.f7297a).m10219a(548, 124, null).m10219a(536, TransportMediator.KEYCODE_MEDIA_PLAY, ProtoBuf.f7297a).m10219a(536, 149, ProtoBuf.f7297a).m10219a(536, 152, ProtoBuf.f7298b).m10219a(548, 139, null).m10219a(538, 141, f6849v).m10219a(548, 144, null).m10219a(539, 145, Activities.f7130a).m10219a(548, 148, null).m10219a(548, 150, null).m10219a(539, 151, f6840m).m10219a(539, 153, ag.f6824a).m10219a(539, 154, ac.f6811b).m10219a(1051, 157, f6842o).m10219a(1051, 158, f6843p).m10219a(548, 173, null).m10219a(548, 177, null).m10219a(548, 159, null).m10219a(1051, 169, Level.f7108a).m10219a(536, 176, ProtoBuf.f7297a).m10219a(539, 178, f6850w).m10219a(542, 180, Primitives.m11085a(0));
+        f6844q.m10219a(292, 13, null).m10219a(1060, 14, null).m10219a(1060, 15, null).m10219a(292, 16, null);
+        f6845r.m10219a(292, 19, null).m10219a(292, 20, null);
+        f6846s.m10219a(1060, 91, null).m10219a(548, 92, null).m10219a(548, 93, null).m10219a(539, 94, f6834g).m10219a(548, 95, null).m10219a(536, 96, ProtoBuf.f7298b);
+        f6847t.m10219a(275, 111, null).m10219a(292, 112, null).m10219a(531, 121, null).m10219a(533, 122, null).m10219a(548, TransportMediator.KEYCODE_MEDIA_PAUSE, null).m10219a(286, AccessibilityNodeInfoCompat.ACTION_CLEAR_ACCESSIBILITY_FOCUS, null).m10219a(280, 129, null).m10219a(531, TransportMediator.KEYCODE_MEDIA_RECORD, null).m10219a(531, 131, Primitives.m11085a(2400000)).m10219a(536, 132, ProtoBuf.f7297a).m10219a(536, 133, ProtoBuf.f7297a).m10219a(536, 134, ProtoBuf.f7297a).m10219a(1051, 156, Common.f7192s).m10219a(536, 166, ProtoBuf.f7297a).m10219a(536, 170, null).m10219a(548, 174, null).m10219a(1051, 171, Common.f7190q).m10219a(1051, 172, Common.f7190q).m10219a(548, 175, null);
+        f6848u.m10219a(292, 71, null).m10219a(548, 140, null).m10219a(548, 72, null).m10219a(548, 73, null).m10219a(548, 115, null).m10219a(548, 116, null).m10219a(548, 155, null).m10219a(536, 160, null).m10219a(536, 164, ProtoBuf.f7297a).m10219a(536, 165, ProtoBuf.f7297a).m10219a(548, 167, null).m10219a(539, 168, f6851x);
+        f6849v.m10219a(548, 142, null).m10219a(542, 143, null).m10219a(1051, 146, f6828a).m10219a(533, 147, Primitives.m11085a(0));
+        f6850w.m10219a(275, 1, null).m10219a(532, 2, null).m10219a(532, 3, null).m10219a(548, 4, null).m10219a(548, 5, null).m10219a(1060, 6, null).m10219a(548, 7, null).m10219a(548, 8, null).m10219a(548, 9, null).m10219a(548, 10, null);
+        f6851x.m10219a(530, 1, null).m10219a(533, 2, null).m10219a(548, 3, null).m10219a(548, 4, null).m10219a(548, 5, null);
+        f6852y.m10219a(542, 1, null);
+    }
+}

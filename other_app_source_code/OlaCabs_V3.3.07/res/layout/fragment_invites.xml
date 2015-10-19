@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/action_bar_layout" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <ImageButton app:id="@id/button_navigation_drawer" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:paddingLeft="@dimen/margin_micro" app:paddingRight="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_medium" app:src="@drawable/bg_button_nav_menu" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/actionbar_Title" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_invite_friends" app:font="@string/font_OpenSans_Light" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@drawable/text_green_text_selector" app:gravity="10" app:layout_gravity="5" app:id="@id/button_earnings" app:background="@drawable/bg_invite_earning_btn_selector" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:text="@string/text_earnings" app:font="@string/font_OpenSans_Semibold" />
+    </FrameLayout>
+    <ProgressBar app:layout_gravity="11" app:id="@id/progressBar_loading" app:visibility="2" app:layout_width="-2" app:layout_height="-1" app:indeterminateDrawable="@drawable/custom_progress_background" />
+    <ScrollView app:id="@id/scrollLayout" app:visibility="0" app:layout_width="-1" app:layout_height="-1">
+        <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2">
+            <RelativeLayout app:background="#333333" app:layout_width="-1" app:layout_height="200dp">
+                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xmedium" app:textColor="@color/ola_gray_light_disable_text" app:id="@id/no_referral_text_1" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large" app:layout_marginTop="@dimen/margin_medium" app:text="@string/text_1_no_refs" app:layout_alignParentTop="true" app:font="@string/font_OpenSans_Light" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xmedium" app:textColor="@color/ola_green_flurescent_text" app:id="@id/no_referral_text_2" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large" app:text="@string/text_2_no_refs" app:layout_below="@id/no_referral_text_1" app:font="@string/font_OpenSans_Light" />
+                <LinearLayout app:orientation="0" app:id="@id/layout_friends_earn" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large" app:layout_marginTop="@dimen/margin_medium" app:layout_alignParentTop="true">
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_grey_light_searchbar_background" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_friends_earn" app:font="@string/font_OpenSans_Light" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_grey_light_searchbar_background" app:id="@id/item_referred_earns" app:layout_width="-2" app:layout_height="-2" app:text="" app:font="@string/font_OpenSans_Light" />
+                </LinearLayout>
+                <LinearLayout app:orientation="0" app:id="@id/layout_you_earn" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large" app:layout_below="@id/layout_friends_earn">
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_grey_light_searchbar_background" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_friend_rides" app:font="@string/font_OpenSans_Light" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_green_flurescent_text" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_you_earn" app:font="@string/font_OpenSans_Light" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_green_flurescent_text" app:id="@id/item_referrer_earns" app:layout_width="-2" app:layout_height="-2" app:text="" app:font="@string/font_OpenSans_Light" />
+                </LinearLayout>
+                <LinearLayout app:orientation="0" app:id="@id/layout_share_referal_code" app:layout_width="-1" app:layout_height="-2" app:layout_margin="@dimen/margin_large" app:layout_alignParentBottom="true">
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_vm_text_color" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_share_referral_code" app:font="@string/font_OpenSans_Light" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_vm_text_color" app:id="@id/textView_referal_code" app:layout_width="-2" app:layout_height="-2" app:text="" app:font="@string/font_OpenSans_Bold" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout app:orientation="0" app:id="@id/button_invite_by_sms" app:background="@drawable/bg_invite_item_selector" app:layout_width="-1" app:layout_height="-2">
+                <ImageView app:layout_gravity="10" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:src="@drawable/ic_invite_sms" />
+                <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large"
+                    <LinearLayout app:orientation="0" app:background="@drawable/bg_invite_item_selector" app:paddingTop="@dimen/margin_large" app:paddingRight="@dimen/margin_large" app:paddingBottom="@dimen/margin_large" app:layout_width="-1" app:layout_height="-2">
+                        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:layout_width="0dp" app:layout_height="-2" app:text="@string/text_invite_sms" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                        <ImageView app:layout_width="-2" app:layout_height="-1" app:src="@drawable/ic_invite_arrow" />
+                    </LinearLayout>
+                    <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout app:orientation="0" app:id="@id/button_invite_by_email" app:background="@drawable/bg_invite_item_selector" app:layout_width="-1" app:layout_height="-2">
+                <ImageView app:layout_gravity="10" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:src="@drawable/ic_invite_email" />
+                <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large"
+                    <LinearLayout app:orientation="0" app:background="@drawable/bg_invite_item_selector" app:paddingTop="@dimen/margin_large" app:paddingRight="@dimen/margin_large" app:paddingBottom="@dimen/margin_large" app:layout_width="-1" app:layout_height="-2">
+                        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:layout_width="0dp" app:layout_height="-2" app:text="@string/text_invite_email" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                        <ImageView app:layout_width="-2" app:layout_height="-1" app:src="@drawable/ic_invite_arrow" />
+                    </LinearLayout>
+                    <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout app:orientation="0" app:id="@id/button_invite_by_facebook" app:background="@drawable/bg_invite_item_selector" app:layout_width="-1" app:layout_height="-2">
+                <ImageView app:layout_gravity="10" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:src="@drawable/ic_invite_facebook" />
+                <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large"
+                    <LinearLayout app:orientation="0" app:background="@drawable/bg_invite_item_selector" app:paddingTop="@dimen/margin_large" app:paddingRight="@dimen/margin_large" app:paddingBottom="@dimen/margin_large" app:layout_width="-1" app:layout_height="-2">
+                        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:layout_width="0dp" app:layout_height="-2" app:text="@string/text_facebook" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                        <ImageView app:layout_width="-2" app:layout_height="-1" app:src="@drawable/ic_invite_arrow" />
+                    </LinearLayout>
+                    <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout app:orientation="0" app:id="@id/button_invite_by_whatsapp" app:background="@drawable/bg_invite_item_selector" app:layout_width="-1" app:layout_height="-2">
+                <ImageView app:layout_gravity="10" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:src="@drawable/ic_invite_whatsapp" />
+                <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large"
+                    <LinearLayout app:orientation="0" app:paddingTop="@dimen/margin_large" app:paddingRight="@dimen/margin_large" app:paddingBottom="@dimen/margin_large" app:layout_width="-1" app:layout_height="-2">
+                        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:layout_width="0dp" app:layout_height="-2" app:text="@string/text_whatsapp" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                        <ImageView app:layout_width="-2" app:layout_height="-1" app:src="@drawable/ic_invite_arrow" />
+                    </LinearLayout>
+                    <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout app:orientation="0" app:id="@id/button_invite_by_twitter" app:background="@drawable/bg_invite_item_selector" app:layout_width="-1" app:layout_height="-2">
+                <ImageView app:layout_gravity="10" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:src="@drawable/twitter_logo" />
+                <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large"
+                    <LinearLayout app:orientation="0" app:background="@drawable/bg_invite_item_selector" app:paddingTop="@dimen/margin_large" app:paddingRight="@dimen/margin_large" app:paddingBottom="@dimen/margin_large" app:layout_width="-1" app:layout_height="-2">
+                        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:layout_width="0dp" app:layout_height="-2" app:text="@string/text_twitter" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                        <ImageView app:layout_width="-2" app:layout_height="-1" app:src="@drawable/ic_invite_arrow" />
+                    </LinearLayout>
+                    <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

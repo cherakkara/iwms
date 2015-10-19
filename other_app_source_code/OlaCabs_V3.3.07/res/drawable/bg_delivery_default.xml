@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_pressed="true" android:drawable="@drawable/delivery_default_pressed" />
+    <item android:state_selected="true" android:drawable="@drawable/delivery_default_selected" />
+    <item android:drawable="@drawable/delivery_default" />
+</selector>

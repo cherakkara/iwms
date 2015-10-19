@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="@dimen/booking_buttons_panel_height" android:layout_width="-1" android:layout_height="-1"
+    <RelativeLayout android:gravity="11" android:id="@id/rate_card_layout" android:background="@color/ola_black_half_transparency" android:paddingLeft="@dimen/margin_large" android:paddingRight="@dimen/margin_large" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+    <HorizontalScrollView android:gravity="1" android:layout_gravity="1" android:id="@id/hsv" android:background="@color/ola_white_semi_transparent" android:scrollbars="0" android:layout_width="-1" android:layout_height="-2" android:measureAllChildren="false" android:fillViewport="true" android:layout_alignParentBottom="true" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="0" android:id="@id/category_panel_layout" android:layout_width="-2" android:layout_height="-2" />
+    </HorizontalScrollView>
+    <View android:id="@id/category_line_view" android:background="@color/ola_green_fluorescent_line" android:layout_width="-1" android:layout_height="1dp" android:layout_above="@id/hsv" />
+</RelativeLayout>

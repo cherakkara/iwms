@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <include layout="@r/card_details_layout" />
+        <RadioGroup android:orientation="0" android:id="@r/cardRadioGroup" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_alignParentLeft="true">
+            <RadioButton android:id="@r/radio0" android:layout_width="0dp" android:layout_height="-2" android:checked="true" android:text="@string/credit_card" android:layout_weight="1.0" />
+            <RadioButton android:id="@r/radio2" android:layout_width="0dp" android:layout_height="-2" android:text="@string/debit_card" android:layout_weight="1.0" />
+        </RadioGroup>
+        <Button android:enabled="false" android:textStyle="1" android:textColor="@color/white" android:layout_gravity="11" android:id="@r/saveCard" android:background="@r/button" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="@string/save_card" />
+    </LinearLayout>
+</ScrollView>

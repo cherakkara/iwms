@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:orientation="1" app:layout_width="-1" app:layout_height="-1" app:weightSum="1.0"
+    <RelativeLayout app:orientation="1" app:id="@id/carousel_teaching" app:layout_width="-2" app:layout_height="-1" app:layout_centerInParent="true" app:layout_centerHorizontal="true">
+        <ImageView app:layout_gravity="1" app:id="@id/logo" app:padding="@dimen/margin_large" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_xxxxxlarge" app:src="@drawable/saftey_logo" app:layout_centerHorizontal="true" style="?unknown_attr_ref: 1010041" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_white" app:gravity="1" app:layout_width="-2" app:layout_height="-2" app:text="@string/safety_text_0" app:layout_below="@id/logo" app:layout_centerHorizontal="true" app:alpha="0.6" app:font="@string/font_OpenSans_Light" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_white" app:gravity="51" app:layout_gravity="51" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_large" app:layout_marginBottom="@dimen/profile_view" app:text="@string/safety_footer_0" app:layout_alignParentBottom="true" app:layout_centerHorizontal="true" app:alpha="0.6" app:font="@string/font_OpenSans_Light" />
+    </RelativeLayout>
+    <LinearLayout app:orientation="1" app:id="@id/sliding_content" app:layout_width="-1" app:layout_height="-1">
+        <ImageView app:id="@id/image" app:padding="@dimen/margin_xlarge" app:layout_width="-1" app:layout_height="0dp" app:layout_weight="0.65" style="?unknown_attr_ref: 1010041" />
+        <LinearLayout app:orientation="1" app:background="@drawable/bg_safety" app:layout_width="-1" app:layout_height="0dp" app:weightSum="1.0" app:layout_weight="0.35">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@color/ola_black" app:gravity="1" app:id="@id/splash_sliding_text" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="@dimen/margin_safety_item" app:text="@string/safety_header_1" app:layout_weight="0.3" app:font="@string/font_OpenSans_Bold" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall1" app:textColor="@color/ola_black" app:gravity="1" app:id="@id/splash_sliding_subtext" app:paddingLeft="@dimen/margin_xlarge" app:paddingRight="@dimen/margin_xlarge" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="@dimen/margin_xlarge" app:text="@string/safety_text_1" app:font="@string/font_OpenSans_Light" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" style="@style/fill">
+    <ListView android:id="@id/fav_list_view" android:listSelector="0x106000d" style="@style/fill" />
+</LinearLayout>

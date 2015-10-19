@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_focused="true">
+        <shape android:shape="0">
+            <corners android:radius="@dimen/eight" />
+            <solid android:color="0x106000b" />
+            <padding android:left="@dimen/sixteen" android:top="@dimen/eight" android:right="@dimen/sixteen" android:bottom="@dimen/eight" />
+            <stroke android:width="2dp" android:color="@color/input_gray" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="0">
+            <corners android:radius="@dimen/eight" />
+            <solid android:color="0x106000b" />
+            <padding android:left="@dimen/sixteen" android:top="@dimen/eight" android:right="@dimen/sixteen" android:bottom="@dimen/eight" />
+            <stroke android:width="2dp" android:color="@color/input_gray" />
+        </shape>
+    </item>
+</selector>

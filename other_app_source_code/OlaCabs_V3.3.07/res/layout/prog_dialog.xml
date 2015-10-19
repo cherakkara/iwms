@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:gravity="1" android:orientation="1" android:background="@r/shape_progress" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_centerInParent="true">
+        <ImageView android:id="@r/imageView" android:paddingTop="10dp" android:layout_width="-2" android:layout_height="-2" android:src="@r/l_icon1" android:scaleType="7" />
+        <TextView android:textSize="20dp" android:textStyle="0" android:layout_gravity="1" android:id="@r/dialog_title" android:paddingTop="30dp" android:layout_width="-2" android:layout_height="-2" android:text="Processing Your Request" />
+        <TextView android:textSize="15dp" android:textStyle="2" android:id="@r/dialog_desc" android:paddingTop="10dp" android:layout_width="-2" android:layout_height="-2" android:text="Please Wait" />
+    </LinearLayout>
+</RelativeLayout>

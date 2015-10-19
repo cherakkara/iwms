@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="0" android:id="@r/buttonsContainer" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+        <Button android:textStyle="1" android:textColor="@color/white" android:layout_gravity="11" android:id="@r/useNewCardButton" android:background="@r/button" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" android:text="@string/use_new_card" />
+    </LinearLayout>
+    <TextView android:id="@r/savedCardTextView" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" android:text="@string/select_save_card" />
+    <TextView android:id="@r/noCardFoundTextView" android:padding="128dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:text="@string/no_card_found" />
+    <ListView android:id="@r/storedCardListView" android:layout_width="-1" android:layout_height="-2" android:layout_above="@r/buttonsContainer" android:layout_below="@r/savedCardTextView" />
+</RelativeLayout>

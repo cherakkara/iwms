@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item>
+        <shape android:shape="0">
+            <solid android:color="@color/ola_tab_background" />
+            <corners android:radius="@dimen/margin_nano" />
+            <stroke android:width="0.5dp" android:color="@color/ola_grey_light_splash_screen" />
+        </shape>
+    </item>
+</selector>

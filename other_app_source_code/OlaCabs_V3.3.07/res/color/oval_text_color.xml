@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_enabled="true" android:color="@color/ola_grey_light_searchbar_background" />
+    <item android:state_enabled="false" android:color="@color/ola_black_text" />
+    <item android:color="@color/ola_grey_light_searchbar_background" />
+</selector>

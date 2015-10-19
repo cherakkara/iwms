@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/action_bar_layout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/actionbar_Title" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_recent_transaction" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:layout_gravity="13" app:id="@id/button_back" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_large" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:src="@drawable/bg_button_nav_back" />
+    </FrameLayout>
+    <TabHost app:id="@id/tabhost" app:layout_width="-1" app:layout_height="-1">
+        <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-1">
+            <TabWidget app:orientation="0" app:id="0x1020013" app:background="@color/ola_tab_background" app:layout_width="-1" app:layout_height="35dp" />
+            <FrameLayout app:id="0x1020011" app:layout_width="0dp" app:layout_height="0dp" app:layout_weight="0.0" />
+            <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2">
+                <View app:id="@id/tab1Select" app:background="@drawable/bg_tab_rides_category" app:layout_width="-1" app:layout_height="@dimen/margin_micro" app:layout_weight="1.0" />
+                <View app:id="@id/tab2Select" app:background="@drawable/bg_tab_rides_category" app:layout_width="-1" app:layout_height="@dimen/margin_micro" app:layout_weight="1.0" />
+                <View app:id="@id/tab3Select" app:background="@drawable/bg_tab_rides_category" app:layout_width="-1" app:layout_height="@dimen/margin_micro" app:layout_weight="1.0" />
+            </LinearLayout>
+            <com.olacabs.customer.ui.widgets.FontTextView app:background="@color/ola_light_tab_strip" app:layout_width="-1" app:layout_height="1px" />
+            <android.support.v4.view.ViewPager app:id="@id/viewPager" app:layout_width="-1" app:layout_height="-1" />
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

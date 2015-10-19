@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item android:id="0x1020000" android:drawable="@drawable/bg_driver_rating_empty" android:left="@dimen/margin_nano" android:right="@dimen/margin_nano" />
+    <item android:id="0x102000f" android:drawable="@drawable/bg_driver_rating_empty" android:left="@dimen/margin_nano" android:right="@dimen/margin_nano" />
+    <item android:id="0x102000d" android:drawable="@drawable/bg_driver_rating_full" android:left="@dimen/margin_nano" android:right="@dimen/margin_nano" />
+</layer-list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_gray_light_searchheader" app:layout_width="-1" app:layout_height="-2">
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_gray_light_searchtext" app:id="@id/sectionText" app:padding="@dimen/margin_micro" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large" app:text="" app:singleLine="true" app:font="@string/font_OpenSans_Semibold" />
+</LinearLayout>

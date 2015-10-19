@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout app:layout_width="-1" app:layout_height="-1">
+    <ListView app:id="@id/listView" app:layout_width="-1" app:layout_height="-1" />
+    <ProgressBar app:layout_gravity="11" app:id="@id/progressBar_loading" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:indeterminateDrawable="@drawable/custom_progress_background" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:layout_gravity="1" app:id="@id/no_transactions" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_xxxxxlarge" app:text="@string/text_no_transaction" app:font="@string/font_OpenSans_Semibold" />
+</FrameLayout>

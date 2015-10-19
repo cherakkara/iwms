@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="@color/cb_background" android:layout_width="-1" android:layout_height="-1">
+    <View android:background="@color/cb_border" android:layout_width="-1" android:layout_height="1dp" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="10" android:orientation="1" android:layout_width="-1" android:layout_height="-1"
+        <LinearLayout android:layout_width="-1" android:layout_height="42dp">
+            <TextView android:textSize="@dimen/sixteenScaled" android:textColor="@color/cb_textColor" android:gravity="11" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="@dimen/eight" android:layout_marginBottom="@dimen/eight" android:drawableTop="@r/slider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2"
+            <LinearLayout android:gravity="11" android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="@dimen/twentyfour">
+                <include android:id="@r/progress" layout="@r/progressdialog" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textSize="18sp" android:textStyle="0" android:textColor="@color/cb_dark_grey" android:id="@r/waiting" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@dimen/eight" android:layout_marginBottom="@dimen/eight" android:text="@r/waiting_for_otp" />
+                <TextView android:textSize="18sp" android:textColor="@color/cb_otpReceivedColor" android:id="@r/otp_recieved" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@dimen/twentyfour" android:text="@r/otp_received" />
+                <EditText android:textSize="25sp" android:textColor="@color/cb_otpColor" android:gravity="11" android:id="@r/otp_sms" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="@dimen/eight" android:hint="Enter OTP" android:ems="5" android:maxLength="8" android:inputType="2" style="@r/cb_edit_text">
+                    <requestFocus />
+                </EditText>
+                <Button android:textSize="17sp" android:id="@r/approve" android:background="@r/approve_otp_button" android:clickable="false" android:layout_width="180dp" android:layout_height="36dp" android:layout_marginTop="@dimen/four" android:layout_marginBottom="@dimen/twentyfour" android:text="@r/approve_otp" android:alpha="0.3" style="@r/approve_otp" />
+                <TextView android:textSize="18sp" android:textColor="@color/cb_dark_grey" android:id="@r/retry_text" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@dimen/eight" android:layout_marginBottom="@dimen/twelve" android:text="@r/regenerate_otp_text" />
+                <LinearLayout android:gravity="1" android:orientation="0" android:id="@r/regenerate_layout" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="@dimen/twentyfour"
+                    <LinearLayout android:gravity="11" android:id="@r/pin_layout_gone" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                        <Button android:textSize="12sp" android:textStyle="1" android:id="@r/pin" android:background="@r/approve_otp_button" android:paddingLeft="@dimen/eight" android:paddingRight="@dimen/eight" android:layout_width="150dp" android:layout_height="36dp" android:text="@r/password_value" style="@r/approve_otp" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="11" android:id="@r/Enter_manually_gone" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                        <Button android:textSize="12sp" android:textStyle="1" android:id="@r/enter_manually" android:background="@r/approve_otp_button" android:paddingLeft="@dimen/eight" android:paddingRight="@dimen/eight" android:layout_width="150dp" android:layout_height="36dp" android:text="Enter Manually" style="@r/approve_otp" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="11" android:id="@r/Regenerate_layout_gone" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                        <Button android:textSize="12sp" android:textStyle="1" android:id="@r/retry" android:background="@r/approve_otp_button" android:paddingLeft="@dimen/eight" android:paddingRight="@dimen/eight" android:layout_width="150dp" android:layout_height="36dp" android:text="@r/regenerate_otp" style="@r/approve_otp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="50" android:orientation="0" android:background="@r/rectangle_box" android:layout_width="-1" android:layout_height="30dp" android:weightSum="1.0">
+                <LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="30dp" android:layout_alignParentLeft="true">
+                    <TextView android:textSize="@dimen/twelveScaled" android:textStyle="1" android:textColor="@color/cb_textColor" android:gravity="11" android:layout_width="-2" android:layout_height="30dp" android:layout_marginLeft="@dimen/eight" android:drawableRight="@r/trusticon" android:drawablePadding="@dimen/four" />
+                    <TextView android:textSize="15sp" android:textStyle="0" android:textColor="@color/cb_textColor" android:gravity="10" android:layout_width="-2" android:layout_height="30dp" android:layout_marginLeft="@dimen/four" android:text="Powered by" android:drawablePadding="@dimen/four" />
+                    <TextView android:textSize="@dimen/twelveScaled" android:textStyle="1" android:textColor="@color/cb_textColor" android:gravity="11" android:layout_width="-2" android:layout_height="20dp" android:layout_marginLeft="@dimen/four" android:drawableLeft="@r/logo_payu" android:drawablePadding="@dimen/four" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="-2" android:layout_height="-1" android:layout_alignParentRight="true">
+                    <ImageView android:layout_gravity="15" android:id="@r/bank_logo" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="-2" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

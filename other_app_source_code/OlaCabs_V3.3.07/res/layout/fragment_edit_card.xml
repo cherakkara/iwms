@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@r/editCardScrollView" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <Spinner android:id="@r/selectCardSpinner" android:layout_width="-1" android:layout_height="-2" />
+        <include layout="@r/card_details_layout" />
+        <Button android:enabled="false" android:textStyle="1" android:textColor="@color/white" android:layout_gravity="11" android:id="@r/editCard" android:background="@r/button" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="@string/edit_card" />
+    </LinearLayout>
+</ScrollView>

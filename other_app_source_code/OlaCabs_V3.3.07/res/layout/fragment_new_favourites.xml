@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:id="@id/main_layout_view" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/topBarLayout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/new_fav_action_bar_view" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/favourites" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:layout_gravity="13" app:id="@id/new_fav_menu_button" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:src="@drawable/bg_button_nav_back" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@drawable/bg_header_text_selector" app:gravity="11" app:layout_gravity="5" app:id="@id/new_fav_done_txt" app:background="@drawable/bg_pressed_state" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:text="@string/save" app:font="@string/font_OpenSans_Regular" />
+    </FrameLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:id="@id/line_view" app:background="@color/ola_orange_light_summaryline" app:layout_width="-1" app:layout_height="1dp" app:layout_below="@id/topBarLayout" />
+    <LinearLayout app:orientation="1" app:id="@id/new_fav_layout" app:background="@color/ola_white" app:clickable="true" app:layout_below="@id/line_view" style="@style/fill">
+        <com.olacabs.customer.ui.widgets.FontTextView app:id="@id/new_fav_error_txt" app:visibility="2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" style="@style/errorText" />
+        <LinearLayout app:orientation="0" app:clickable="true" app:layout_marginTop="@dimen/margin_normal" style="@style/h_block">
+            <ImageView app:id="@id/new_fav_image" app:clickable="true" app:layout_marginLeft="@dimen/margin_large" app:src="@drawable/ic_default_favourite" style="@style/wrap" />
+            <com.olacabs.customer.ui.widgets.FontEditText app:textColor="@color/ola_black_text" app:id="@id/new_fav_title_txt" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:clickable="true" app:layout_marginLeft="@dimen/margin_normal" app:hint="@string/hint_name_fav" app:singleLine="true" app:maxLength="25" app:imeOptions="5" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Light" style="@style/h_block" />
+        </LinearLayout>
+        <View app:background="@color/ola_gray_light_searchheader" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_subtitle" app:layout_marginTop="@dimen/margin_normal" />
+        <com.olacabs.customer.ui.widgets.FontEditText app:textColor="@color/ola_black_text" app:ellipsize="3" app:id="@id/new_fav_sub_title_txt" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:layout_marginLeft="@dimen/margin_subtitle" app:layout_marginTop="@dimen/margin_normal" app:maxLines="3" app:lines="3" app:imeOptions="2" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Light" style="@style/h_block" />
+        <View app:background="@color/ola_gray_light_searchheader" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_subtitle" app:layout_marginTop="@dimen/margin_normal" />
+        <RelativeLayout app:layout_width="-1" app:layout_height="-1">
+            <FrameLayout app:id="@id/container_map" app:layout_width="-1" app:layout_height="-1" />
+            <ImageView app:layout_width="-2" app:layout_height="-2" app:src="@drawable/ic_map_marker" app:layout_centerInParent="true" />
+            <ImageView app:id="@id/currentposition" app:layout_width="-2" app:layout_height="-2" app:layout_margin="@dimen/margin_xlarge" app:src="@drawable/ic_current_location_located" app:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

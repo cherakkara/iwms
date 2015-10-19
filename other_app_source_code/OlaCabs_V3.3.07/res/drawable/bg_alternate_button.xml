@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_selected="true" android:drawable="@drawable/ic_search_cancel" />
+    <item android:state_selected="false" android:drawable="@drawable/ic_invite_arrow" />
+    <item android:drawable="@drawable/ic_invite_arrow" />
+</selector>

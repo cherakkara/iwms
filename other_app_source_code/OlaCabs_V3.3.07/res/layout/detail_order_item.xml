@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:gravity="10" app:background="@color/ola_white" app:padding="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2">
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black" app:id="@id/name" app:layout_width="-2" app:layout_height="-2" app:text="asdasdadasd" app:font="@string/font_OpenSans_Bold" />
+</RelativeLayout>

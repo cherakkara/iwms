@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@drawable/bg_dialog_white" app:layout_width="-1" app:layout_height="-2">
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:gravity="11" app:layout_gravity="1" app:id="@id/item_header" app:paddingLeft="@dimen/margin_xlarge" app:paddingRight="@dimen/margin_xlarge" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_list_item" app:text="@string/text_tell_us" app:font="@string/font_OpenSans_Semibold" />
+    <View app:background="@color/ola_green_fluorescent_line" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_xxlarge" app:layout_marginTop="@dimen/margin_small" app:layout_marginRight="@dimen/margin_xxlarge" />
+    <ListView app:gravity="11" app:id="@id/item_list" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xlarge" app:layout_marginTop="@dimen/margin_small" app:layout_marginRight="@dimen/margin_xlarge" app:layout_marginBottom="@dimen/margin_small" app:divider="@color/ola_grey_light_searchbar_background" app:dividerHeight="1dp" app:choiceMode="1" />
+    <LinearLayout app:orientation="0" app:background="@drawable/bg_button_rounded_bottom" app:layout_width="-1" app:layout_height="-2">
+        <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_black_button_selector" app:id="@id/button_no" app:background="@drawable/bg_button_rounded_left" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_back_caps" app:layout_weight="1.0" app:textAllCaps="true" app:font="@string/font_OpenSans_Regular" />
+        <View app:background="@color/ola_green_flurescent_text" app:layout_width="1dp" app:layout_height="-1" app:alpha="0.2" />
+        <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_black_button_selector" app:id="@id/button_yes" app:background="@drawable/bg_button_rounded_right" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_submit_caps" app:layout_weight="1.0" app:textAllCaps="true" app:font="@string/font_OpenSans_Regular" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="0" app:paddingLeft="@dimen/margin_small" app:paddingTop="@dimen/margin_small" app:paddingRight="@dimen/margin_small" app:layout_width="-1" app:layout_height="-2"
+    <LinearLayout app:gravity="10" app:orientation="0" app:layout_width="-2" app:layout_height="-2">
+        <ImageView app:id="@id/item_transaction_type_icon" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_nano" app:src="@drawable/ic_ola_money_debit" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:id="@id/item_transaction_type_text" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_nano" app:text="@string/text_DR" app:font="@string/font_OpenSans_Regular" />
+    </LinearLayout>
+    <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:id="@id/item_amount" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Regular" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_black_text" app:id="@id/item_extra_text" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:text="@string/text_referral" app:font="@string/font_OpenSans_Regular" />
+        <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_black_text" app:id="@id/item_date" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_sample_date" app:layout_weight="1.0" app:font="@string/font_OpenSans_Semibold" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_black_text" app:gravity="5" app:id="@id/item_balance" app:layout_width="-1" app:layout_height="-2" app:layout_weight="1.0" app:font="@string/font_OpenSans_Semibold" />
+        </LinearLayout>
+        <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" app:layout_marginTop="@dimen/margin_small" />
+    </LinearLayout>
+</LinearLayout>

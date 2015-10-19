@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:paddingTop="@dimen/margin_xxlarge" app:layout_width="-1" app:layout_height="-1">
+    <ImageView app:id="@id/splash_sliding_image" app:layout_width="-2" app:layout_height="-2" app:layout_centerHorizontal="true" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_grey_light_splash_screen" app:gravity="1" app:id="@id/splash_sliding_text" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="@dimen/margin_large" app:layout_below="@id/splash_sliding_image" app:font="@string/font_OpenSans_Bold" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_grey_light_splash_screen" app:gravity="1" app:id="@id/splash_sliding_subtext" app:layout_width="-1" app:layout_height="-2" app:layout_below="@id/splash_sliding_text" app:font="@string/font_OpenSans_Light" />
+</RelativeLayout>

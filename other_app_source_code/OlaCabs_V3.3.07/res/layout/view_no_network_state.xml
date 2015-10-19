@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:visibility="1" android:layout_width="-1" android:layout_height="-1">
+    <com.olacabs.customer.ui.widgets.FontTextView android:textColor="@color/ola_pitch_black" android:gravity="11" android:id="@id/no_internet_txt" android:background="@color/ola_green_flurescent" android:padding="@dimen/margin_micro" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="30dp" android:text="@string/server_failure" />
+</LinearLayout>

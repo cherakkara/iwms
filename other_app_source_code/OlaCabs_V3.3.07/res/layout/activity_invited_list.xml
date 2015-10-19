@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/action_bar_layout" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <ImageButton app:id="@id/button_back" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:paddingLeft="@dimen/margin_micro" app:paddingRight="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_medium" app:src="@drawable/bg_button_nav_back" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/actionbar_Title" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_earnings" app:font="@string/font_OpenSans_Light" />
+    </FrameLayout>
+    <View app:background="@color/ola_green_fluorescent_line" app:layout_width="-1" app:layout_height="1dp" />
+    <LinearLayout app:orientation="1" app:id="@id/main_layout" app:visibility="2" app:layout_width="-1" app:layout_height="-1"
+        <LinearLayout app:gravity="11" app:orientation="1" app:background="@color/ola_black_text" app:layout_width="-1" app:layout_height="-2">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxxlarge" app:textColor="@color/ola_green_flurescent_text" app:id="@id/item_money_earned" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_light_searchtext" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="@dimen/margin_small" app:text="@string/text_ola_money_balance" app:font="@string/font_OpenSans_Light" />
+        </LinearLayout>
+        <ListView app:id="@id/listView" app:layout_width="-1" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_nano" app:layout_marginRight="@dimen/margin_nano" app:divider="@color/ola_up_vm_text_color" app:dividerHeight="1dp" />
+    </LinearLayout>
+    <ProgressBar app:layout_gravity="11" app:id="@id/progressBar_loading" app:visibility="0" app:layout_width="-2" app:layout_height="-1" app:indeterminateDrawable="@drawable/custom_progress_background" />
+    <LinearLayout app:gravity="11" app:orientation="1" app:id="@id/layout_no_invites" app:visibility="0" app:layout_width="-1" app:layout_height="-1">
+        <ImageView app:layout_gravity="1" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/ic_invite_default" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxlarge" app:textColor="@color/ola_vm_text_color" app:layout_gravity="1" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_xlarge" app:layout_marginBottom="@dimen/margin_xxxxlarge" app:text="@string/text_no_olamoney" app:font="@string/font_OpenSans_Light" />
+    </LinearLayout>
+</LinearLayout>

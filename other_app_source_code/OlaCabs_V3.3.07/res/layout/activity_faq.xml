@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/topBarLayout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/rideTitle" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_faq" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:layout_gravity="13" app:id="@id/backImageView" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:src="@drawable/bg_button_nav_back" />
+    </FrameLayout>
+    <View app:background="@color/ola_yellow_light_header_line" app:layout_width="-1" app:layout_height="1px" />
+    <RelativeLayout app:id="@id/scrollLayout" app:layout_width="-1" app:layout_height="-1">
+        <WebView app:id="@id/webViewRateCard" app:layout_width="-1" app:layout_height="-1" />
+        <ProgressBar app:id="@id/emptyView" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:indeterminateDrawable="@drawable/custom_progress_background" app:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

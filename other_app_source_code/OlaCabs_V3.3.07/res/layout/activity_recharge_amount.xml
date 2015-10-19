@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_tab_background" app:layout_width="-1" app:layout_height="-1" app:animateLayoutChanges="true">
+    <RelativeLayout app:id="@id/action_bar_layout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <ImageButton app:layout_gravity="13" app:id="@id/button_back" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:src="@drawable/ic_ride_details_back" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/actionbar_Title" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_recharge_ola_money" app:layout_centerInParent="true" app:font="@string/font_OpenSans_Light" />
+    </RelativeLayout>
+    <View app:background="@color/ola_yellow_light_header_line" app:layout_width="-1" app:layout_height="1dp" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_white" app:id="@id/error_text" app:background="@color/ola_red_dark" app:paddingLeft="@dimen/margin_medium" app:paddingTop="@dimen/margin_micro" app:paddingRight="@dimen/margin_micro" app:paddingBottom="@dimen/margin_micro" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_alignParentTop="true" app:font="@string/font_OpenSans_Light" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_gray_light_text" app:paddingLeft="@dimen/margin_medium" app:paddingTop="@dimen/margin_medium" app:paddingBottom="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_select_payment_option" app:font="@string/font_OpenSans_Semibold" />
+    <View app:background="@color/ola_gray_light_disable_text" app:layout_width="-1" app:layout_height="1dp" />
+    <ScrollView app:id="@id/scroll_container" app:layout_width="-1" app:layout_height="0dp" app:layout_weight="1.0">
+        <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2"
+            <LinearLayout app:orientation="1" app:id="@id/savedCardsLayout" app:background="@color/ola_white" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:divider="@drawable/divider_vertical" app:showDividers="2" />
+            <LinearLayout app:orientation="1" app:id="@id/saved_divider" app:visibility="2" app:layout_width="-1" app:layout_height="-2">
+                <View app:background="@color/ola_gray_light_disable_text" app:layout_width="-1" app:layout_height="1dp" />
+                <View app:background="@color/ola_gray_light_disable_text" app:layout_width="-1" app:layout_height="1dp" app:layout_marginTop="@dimen/margin_large" />
+            </LinearLayout>
+            <LinearLayout app:orientation="1" app:id="@id/unSavedCardLayout" app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-2" app:divider="@drawable/divider_vertical" app:animateLayoutChanges="true" app:showDividers="2"
+                <LinearLayout app:orientation="1" app:id="@id/debit_card_layout" app:layout_width="-1" app:layout_height="-2"
+                    <LinearLayout app:id="@id/debitCard" app:padding="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2">
+                        <RadioButton app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/debit_card_button" app:focusable="false" app:clickable="false" app:layout_width="-1" app:layout_height="-2" app:button="@r/SlidingUpPanelLayout_umanoPanelHeight" app:text="@string/text_debit_card" app:drawableLeft="@drawable/radio_button_payment_option" app:drawablePadding="@dimen/margin_medium" />
+                    </LinearLayout>
+                    <include app:id="@id/debit_card_details" layout="@layout/view_card_details" />
+                </LinearLayout>
+                <LinearLayout app:orientation="1" app:id="@id/credit_card_layout" app:layout_width="-1" app:layout_height="-2"
+                    <LinearLayout app:id="@id/creditCard" app:padding="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2">
+                        <RadioButton app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/credit_card_button" app:focusable="false" app:clickable="false" app:layout_width="-1" app:layout_height="-2" app:button="@r/SlidingUpPanelLayout_umanoPanelHeight" app:text="@string/text_credit_card" app:drawableLeft="@drawable/radio_button_payment_option" app:drawablePadding="@dimen/margin_medium" />
+                    </LinearLayout>
+                    <include app:id="@id/credit_card_details" layout="@layout/view_card_details" />
+                </LinearLayout>
+                <LinearLayout app:orientation="1" app:id="@id/net_banking_layout" app:layout_width="-1" app:layout_height="-2"
+                    <LinearLayout app:id="@id/net_banking_header" app:padding="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2">
+                        <RadioButton app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/net_banking_button" app:focusable="false" app:clickable="false" app:layout_width="-1" app:layout_height="-2" app:button="@r/SlidingUpPanelLayout_umanoPanelHeight" app:text="@string/text_net_banking" app:drawableLeft="@drawable/radio_button_payment_option" app:drawablePadding="@dimen/margin_medium" />
+                    </LinearLayout>
+                    <include app:id="@id/net_banking_details" layout="@layout/view_net_banking" />
+                </LinearLayout>
+            </LinearLayout>
+            <View app:background="@color/ola_gray_light_disable_text" app:layout_width="-1" app:layout_height="1dp" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@color/ola_black" app:layout_gravity="1" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_xxlarge" app:text="@string/text_recharge_amount" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxlarge1" app:textColor="@color/ola_black" app:layout_gravity="1" app:id="@id/ola_money_text_view" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_nano" app:text="Rs 1000" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_light_text" app:layout_gravity="1" app:id="@id/applicable_offer_text_view" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_nano" app:text="15% EXTRA applicable on this recharge" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_black_button_selector" app:id="@id/button_pay_now" app:background="@drawable/bg_payu_buttons" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:layout_marginTop="@dimen/margin_medium" app:layout_marginRight="@dimen/margin_medium" app:text="@string/pay_now" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_light_text" app:layout_gravity="1" app:paddingLeft="@dimen/margin_normal" app:paddingTop="@dimen/margin_normal" app:paddingRight="@dimen/margin_normal" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_not_refundable" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_light_text" app:gravity="11" app:layout_gravity="1" app:id="@id/termConditionText" app:paddingLeft="@dimen/margin_normal" app:paddingRight="@dimen/margin_normal" app:paddingBottom="@dimen/margin_normal" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_micro" app:text="@string/view_terms_condition" app:font="@string/font_OpenSans_Regular" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2"
+    <LinearLayout app:padding="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2">
+        <ImageView app:layout_gravity="11" app:id="@id/pic" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small" app:layout_marginRight="@dimen/margin_small" app:layout_marginBottom="@dimen/margin_micro" app:src="@drawable/ic_ride_clock_icon" />
+        <LinearLayout app:layout_gravity="13" app:orientation="1" app:layout_width="0dp" app:layout_height="-2" app:layout_weight="1.0">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:ellipsize="3" app:gravity="13" app:id="@id/pickUpTimeText" app:layout_width="-1" app:layout_height="0dp" app:singleLine="true" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_light_searchtext" app:ellipsize="3" app:id="@id/pickUpDateText" app:layout_width="-1" app:layout_height="0dp" app:singleLine="true" app:layout_weight="1.0" app:font="@string/font_OpenSans_Italic" />
+        </LinearLayout>
+        <ImageView app:layout_gravity="11" app:id="@r/arrow" app:background="@drawable/ic_ride_list_icon" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:layout_marginRight="@dimen/margin_medium" />
+    </LinearLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_xxxxxlarge" />
+</LinearLayout>

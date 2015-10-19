@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_pressed="true">
+        <shape android:shape="0">
+            <solid android:color="@color/ola_green_flurescent" />
+            <corners android:bottomRightRadius="@dimen/margin_micro" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="0">
+            <corners android:bottomRightRadius="@dimen/margin_micro" />
+        </shape>
+    </item>
+</selector>

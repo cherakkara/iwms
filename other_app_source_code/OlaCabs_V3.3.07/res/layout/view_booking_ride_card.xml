@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2">
+    <LinearLayout app:orientation="1" app:id="@id/layout_ride_card" app:visibility="0" app:layout_width="-1" app:layout_height="-2"
+        <LinearLayout app:gravity="1" app:orientation="1" app:id="@id/item_category_layout" app:layout_width="-1" app:layout_height="-2" app:layout_margin="@dimen/margin_medium">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textStyle="1" app:textColor="@color/ola_black_text" app:id="@id/item_category" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="@dimen/margin_small" app:textAllCaps="true" app:font="@string/font_OpenSans_Bold" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_black_text" app:id="@id/item_options" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Regular" />
+        </LinearLayout>
+        <View app:id="@id/item_cataegory_line" app:background="@color/ola_green_fluorescent_line" app:layout_width="-1" app:layout_height="1dp" />
+        <LinearLayout app:gravity="1" app:orientation="1" app:paddingLeft="@dimen/margin_large" app:paddingRight="@dimen/margin_large" app:layout_width="-1" app:layout_height="-2" app:layout_margin="@dimen/margin_medium">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textStyle="1" app:textColor="@color/ola_black_text" app:id="@id/fare_header_txt" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="@dimen/margin_small" app:font="@string/font_OpenSans_Bold" />
+            <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2">
+                <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_black_text" app:ellipsize="3" app:id="@id/item_base_fair_text" app:layout_width="0dp" app:layout_height="-2" app:singleLine="true" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:textStyle="1" app:textColor="@color/ola_black_text" app:id="@id/item_base_fair" app:layout_width="@dimen/rate_card_text_width_mega" app:layout_height="-2" app:font="@string/font_OpenSans_Bold" />
+            </LinearLayout>
+            <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2">
+                <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_black_text" app:ellipsize="3" app:id="@id/item_rate_per_km_text" app:layout_width="0dp" app:layout_height="-2" app:singleLine="true" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:textStyle="1" app:textColor="@color/ola_black_text" app:id="@id/item_rate_per_km" app:layout_width="@dimen/rate_card_text_width_mega" app:layout_height="-2" app:font="@string/font_OpenSans_Bold" />
+            </LinearLayout>
+            <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2">
+                <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_black_text" app:ellipsize="3" app:id="@id/item_rate_per_wait_minute_text" app:layout_width="0dp" app:layout_height="-2" app:singleLine="true" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:textStyle="1" app:textColor="@color/ola_black_text" app:id="@id/item_rate_per_wait_minute" app:layout_width="@dimen/rate_card_text_width_mega" app:layout_height="-2" app:font="@string/font_OpenSans_Bold" />
+            </LinearLayout>
+            <LinearLayout app:orientation="0" app:id="@id/peaktimeLayout" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small">
+                <com.olacabs.customer.ui.widgets.FontTextView app:textColor="0x1060017" app:id="@id/item_peak_time_charge_text" app:layout_width="0dp" app:layout_height="-2" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:textStyle="1" app:textColor="0x1060017" app:id="@id/item_peak_time_charge" app:layout_width="@dimen/rate_card_text_width" app:layout_height="-2" app:font="@string/font_OpenSans_Bold" />
+            </LinearLayout>
+            <LinearLayout app:orientation="0" app:id="@id/desclaimerLayout" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:layout_marginBottom="@dimen/margin_small">
+                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/text_item_note_text" app:textColor="@color/ola_black_text" app:id="@id/item_note_text" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Bold" />
+                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/text_item_note_text" app:textStyle="1" app:textColor="@color/ola_black_text" app:id="@id/item_desclaimer_text" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar app:layout_gravity="11" app:id="@id/progressBar_loading" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:indeterminateDrawable="@drawable/custom_progress_background" />
+</FrameLayout>

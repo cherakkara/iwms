@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:background="#ffffff" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/container_map" app:layout_width="-1" app:layout_height="-1" />
+    <View app:background="#00000000" app:layout_width="-1" app:layout_height="-1" />
+    <LinearLayout app:orientation="0" app:id="@id/layout_top" app:paddingTop="@dimen/margin_small" app:paddingRight="@dimen/margin_small" app:paddingBottom="@dimen/margin_micro" app:layout_width="-1" app:layout_height="-2">
+        <ImageButton app:id="@id/button_navigation_drawer" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:layout_width="-2" app:layout_height="-1" app:src="@drawable/bg_button_nav_bg_menu" />
+        <LinearLayout app:orientation="0" app:background="@drawable/ic_search_base" app:layout_width="-1" app:layout_height="-2">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@drawable/bg_search_bar" app:ellipsize="3" app:gravity="10" app:id="@id/textView_location" app:paddingLeft="@dimen/margin_large" app:paddingRight="@dimen/margin_medium" app:layout_width="0dp" app:layout_height="-1" app:hint="@string/hint_getting_address" app:singleLine="true" app:drawableLeft="@drawable/ic_search_icon" app:drawablePadding="@dimen/margin_micro" app:layout_weight="1.0" app:font="@string/font_OpenSans_Regular" />
+            <View app:background="@color/ola_gray_light_line" app:layout_width="1dp" app:layout_height="-1" app:layout_marginTop="@dimen/margin_medium" app:layout_marginBottom="@dimen/margin_medium" />
+            <ImageView app:layout_gravity="10" app:id="@id/button_map_favorite" app:paddingRight="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:layout_margin="@dimen/margin_small" app:src="@drawable/bg_button_add_fav" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.olacabs.customer.ui.widgets.LocationButton app:id="@id/button_move_to_user_location" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:layout_width="-2" app:layout_height="-2" app:layout_marginRight="@dimen/margin_medium" app:src="@drawable/location_button" app:layout_below="@id/layout_top" app:layout_alignParentRight="true" />
+    <ImageView app:id="@id/sos_image" app:background="0x106000d" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:layout_below="@id/layout_top" />
+    <ImageView app:id="@id/imageView_map_pointer" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/ic_map_marker" app:layout_centerInParent="true" />
+    <FrameLayout app:id="@id/container_sub_panel" app:layout_width="-1" app:layout_height="-1" app:layout_alignParentBottom="true" />
+    <RelativeLayout app:id="@id/layout_eta_strip" app:background="@drawable/bg_button_eta_strip" app:paddingBottom="@dimen/margin_micro_small" app:layout_width="-1" app:layout_height="-2">
+        <View app:id="@id/item_eta_strip_divider" app:background="@color/ola_green_flurescent_line_transparent" app:layout_width="-1" app:layout_height="1dp" app:layout_marginBottom="@dimen/margin_micro_small" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall1" app:id="@id/item_eta" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:text="@string/text_test" app:layout_below="@id/item_eta_strip_divider" app:layout_alignParentLeft="true" app:font="@string/font_OpenSans_Regular" />
+        <ImageView app:layout_width="-2" app:layout_height="-1" app:layout_marginRight="@dimen/margin_medium" app:src="@drawable/ic_track_eta_arrow" app:layout_alignTop="@id/item_eta" app:layout_alignBottom="@id/item_eta" app:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall1" app:textColor="@color/ola_black_text" app:ellipsize="4" app:gravity="1" app:id="@id/textView_message" app:background="@color/ola_green_flurescent" app:padding="@dimen/margin_micro_small" app:focusable="true" app:focusableInTouchMode="true" app:layout_width="-1" app:layout_height="-2" app:text="@string/text_cab_details" app:scrollHorizontally="true" app:singleLine="true" app:freezesText="true" app:marqueeRepeatLimit="-1" app:font="@string/font_OpenSans_Regular" />
+    <LinearLayout app:orientation="0" app:id="@id/layout_ride_buttons" app:background="@drawable/bg_button_black_default" app:layout_width="-1" app:layout_height="@dimen/booking_buttons_panel_height" app:layout_alignParentBottom="true">
+        <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_black_button_selector" app:id="@id/button_ride_later" app:background="@drawable/bg_button_black_default" app:layout_width="-1" app:layout_height="-1" app:text="@string/text_ride_later" app:layout_weight="1.0" app:font="@string/font_OpenSans_Light" />
+        <View app:background="@color/ola_green_flurescent_text" app:layout_width="1dp" app:layout_height="-1" app:alpha="0.4" />
+        <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_black_button_selector" app:id="@id/button_ride_now" app:background="@drawable/bg_button_black_default" app:layout_width="-1" app:layout_height="-1" app:text="@string/text_ride_now" app:layout_weight="1.0" app:font="@string/font_OpenSans_Light" />
+    </LinearLayout>
+    <include app:layout_gravity="50" app:id="@id/view_no_location_overlay" app:layout_width="-1" app:layout_height="-1" app:layout_below="@id/layout_top" layout="@layout/nolocation_overlay_view" />
+</RelativeLayout>

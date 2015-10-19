@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="0" app:visibility="2" app:layout_width="-1" app:layout_height="-1" app:weightSum="100.0">
+    <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_sign_up_button_selector" app:id="@id/sign_up_btn" app:background="@drawable/bg_button_sign_up_selector" app:layout_marginLeft="@dimen/margin_normal" app:layout_marginRight="5dp" app:text="@string/sign_up" app:layout_weight="50.0" app:font="@string/font_OpenSans_Regular" style="@style/h_block" />
+    <com.olacabs.customer.ui.widgets.FontButton app:textColor="@drawable/text_black_button_selector" app:id="@id/login_btn" app:background="@drawable/bg_button_login_selector" app:layout_marginLeft="5dp" app:layout_marginRight="@dimen/margin_normal" app:text="@string/login" app:layout_weight="50.0" app:font="@string/font_OpenSans_Regular" style="@style/h_block" />
+</LinearLayout>

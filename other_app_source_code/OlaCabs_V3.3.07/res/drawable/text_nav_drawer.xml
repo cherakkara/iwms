@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_pressed="true" android:color="@color/ola_green_flurescent" />
+    <item android:state_selected="true" android:color="@color/ola_green_flurescent" />
+    <item android:color="@color/ola_green_flurescent" android:state_activated="true" />
+    <item android:color="@color/ola_gray_text" />
+</selector>

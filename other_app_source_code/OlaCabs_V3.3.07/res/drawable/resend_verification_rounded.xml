@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_pressed="true">
+        <shape android:shape="0">
+            <solid android:color="@color/ola_green_flurescent" />
+            <stroke android:width="1dp" android:color="#333333" />
+            <padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="10dp" />
+            <corners android:topLeftRadius="2dp" android:topRightRadius="2dp" android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="0">
+            <solid android:color="@color/ola_white" />
+            <stroke android:width="1dp" android:color="#333333" />
+            <padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="10dp" />
+            <corners android:topLeftRadius="2dp" android:topRightRadius="2dp" android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" />
+        </shape>
+    </item>
+</selector>

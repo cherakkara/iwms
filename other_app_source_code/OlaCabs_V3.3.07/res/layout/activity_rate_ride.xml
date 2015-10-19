@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/driver_rating_bar_colour" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/topBarLayout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/rideTitle" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/rate_ride_actionbar_text" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:layout_gravity="13" app:id="@id/backImageView" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:src="@drawable/bg_button_nav_back" />
+    </FrameLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:background="@color/ola_yellow_light_header_line" app:layout_width="-1" app:layout_height="1dp" />
+    <RelativeLayout app:layout_width="-1" app:layout_height="-1">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/large" app:textColor="@drawable/text_black_button_selector" app:gravity="11" app:id="@id/summary_rating_submit" app:background="@drawable/bg_button_black_default" app:visibility="2" app:layout_width="-1" app:layout_height="@dimen/alert_dialog_button_bar_height" app:text="@string/rating_submit" app:layout_alignParentBottom="true" app:font="@string/font_OpenSans_Light" />
+        <ListView app:id="@id/rate_ride_list" app:fadingEdge="0" app:layout_width="-1" app:layout_height="-1" app:divider="@color/track_ride_list_divider" app:dividerHeight="0.5dp" app:layout_above="@id/summary_rating_submit" app:headerDividersEnabled="false" app:footerDividersEnabled="false" />
+        <LinearLayout app:gravity="11" app:orientation="1" app:id="@id/ratingbar_container" app:background="@color/driver_rating_bar_colour" app:layout_width="-1" app:layout_height="@dimen/rate_ride_view_holder_height" app:layout_marginRight="@dimen/margin_small">
+            <RatingBar app:id="@id/ratingBar" app:layout_width="-2" app:layout_height="-2" app:layout_margin="@dimen/margin_medium_large" app:numStars="5" app:stepSize="1.0" app:layout_centerHorizontal="true" style="@style/driverRatingBar" />
+            <View app:id="@id/rating_bar_shadow" app:background="@color/track_ride_rating_bar_shadow" app:visibility="2" app:layout_width="-1" app:layout_height="1dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

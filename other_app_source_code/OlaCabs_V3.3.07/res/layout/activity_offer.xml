@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+    <ScrollView app:layout_width="-1" app:layout_height="-2">
+        <RelativeLayout app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-2">
+            <ImageView app:id="@id/offer_cancel" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/ola_money_margin_start_small" app:layout_marginTop="@dimen/ola_money_margin_start_small" app:src="@drawable/offer_cross" app:layout_alignParentLeft="true" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:gravity="11" app:id="@id/wallet_icon_text" app:padding="@dimen/margin_medium_large" app:layout_width="-2" app:layout_height="-2" app:text="Cashless rides with Ola Money." app:drawableTop="@drawable/om_icon_large" app:drawablePadding="@dimen/ola_money_margin_top" app:layout_below="@id/offer_cancel" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Semibold" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_gray_light_text" app:gravity="11" app:id="@id/sub_text" app:layout_width="-2" app:layout_height="-2" app:text="Ola Money is your personal wallet 
+ Top it up and ride cashless" app:layout_below="@id/wallet_icon_text" app:layout_centerInParent="true" app:font="@string/font_OpenSans_Regular" />
+            <RelativeLayout app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="20dp" app:layout_below="@id/sub_text">
+                <LinearLayout app:orientation="1" app:background="@drawable/bg_offer_box_background" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="30dp" app:layout_marginTop="15dp" app:layout_marginRight="30dp">
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xlarge" app:textColor="@color/ola_black" app:gravity="11" app:id="@id/offer_header_text" app:layout_width="-1" app:layout_height="-2" app:layout_marginTop="30dp" app:layout_marginBottom="5dp" app:text="" app:layout_below="@id/wallet_icon_text" app:layout_centerInParent="true" app:font="@string/font_OpenSans_ExtraBold" />
+                    <View app:background="@color/ola_gray_dark" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="30dp" app:layout_marginRight="30dp" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_gray_light_text" app:gravity="11" app:id="@id/offer_desc" app:padding="10dp" app:layout_width="-2" app:layout_height="-2" app:layout_below="@id/wallet_icon_text" app:layout_centerInParent="true" app:font="@string/font_OpenSans_Regular" />
+                </LinearLayout>
+                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_black" app:gravity="11" app:id="@id/offer_header" app:background="@drawable/offer_header" app:layout_width="190dp" app:layout_height="40dp" app:text="LIMITED TIME OFFER" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Regular" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_yellow_light_text_link" app:id="@id/skip_text" app:padding="@dimen/margin_medium_large" app:layout_width="-2" app:layout_height="-2" app:text="SKIP" app:layout_alignParentBottom="true" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Semibold" />
+    <com.olacabs.customer.ui.widgets.FontButton app:textSize="@dimen/xsmall" app:textColor="@color/ola_yellow_light_text_link" app:id="@id/claim" app:background="@r/black" app:padding="@dimen/margin_medium_large" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xxxlarge" app:layout_marginTop="@dimen/margin_xxxlarge" app:layout_marginRight="@dimen/margin_xxxlarge" app:layout_marginBottom="@dimen/margin_normal" app:text="CLAIM OFFER" app:layout_above="@id/skip_text" app:layout_centerHorizontal="true" app:font="@string/font_OpenSans_Semibold" />
+</RelativeLayout>

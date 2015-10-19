@@ -1,0 +1,31 @@
+package com.payu.p084a;
+
+import android.os.Message;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+
+/* renamed from: com.payu.a.c */
+public class PayUWebChromeClient extends WebChromeClient {
+    private Bank mBank;
+    private boolean mPageDone;
+
+    public PayUWebChromeClient(Bank bank) {
+        this.mPageDone = false;
+        this.mBank = bank;
+    }
+
+    public boolean onCreateWindow(WebView webView, boolean z, boolean z2, Message message) {
+        return false;
+    }
+
+    public void onProgressChanged(WebView webView, int i) {
+        if (!this.mPageDone && i < 100) {
+            this.mPageDone = true;
+            this.mBank.onPageStarted();
+        } else if (i == 100) {
+            this.mBank.onPageStarted();
+            this.mPageDone = false;
+            this.mBank.onPageFinished();
+        }
+    }
+}

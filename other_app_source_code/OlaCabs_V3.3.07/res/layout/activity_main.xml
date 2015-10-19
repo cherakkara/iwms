@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="-1" android:layout_height="-1">
+    <FrameLayout android:id="@id/container" android:layout_width="-1" android:layout_height="-1" />
+    <fragment android:name="com.olacabs.customer.ui.NavigationDrawerFragment" android:layout_gravity="800003" android:id="@id/navigation_drawer" android:layout_width="@dimen/navigation_drawer_width" android:layout_height="-1" />
+</android.support.v4.widget.DrawerLayout>

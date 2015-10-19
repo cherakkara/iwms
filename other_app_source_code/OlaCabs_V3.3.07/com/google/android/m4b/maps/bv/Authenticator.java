@@ -1,0 +1,95 @@
+package com.google.android.m4b.maps.bv;
+
+import com.google.android.m4b.maps.bt.MessageSetProtos;
+import com.google.android.m4b.maps.bu.ThinmintCore;
+import com.google.android.m4b.maps.bw.StandardDatScope;
+import com.google.android.m4b.maps.p046d.ProtoBufType;
+
+/* renamed from: com.google.android.m4b.maps.bv.a */
+public final class Authenticator {
+    private static ProtoBufType f6743A;
+    private static ProtoBufType f6744B;
+    public static final ProtoBufType f6745a;
+    public static final ProtoBufType f6746b;
+    public static final ProtoBufType f6747c;
+    private static ProtoBufType f6748d;
+    private static ProtoBufType f6749e;
+    private static ProtoBufType f6750f;
+    private static ProtoBufType f6751g;
+    private static ProtoBufType f6752h;
+    private static ProtoBufType f6753i;
+    private static ProtoBufType f6754j;
+    private static ProtoBufType f6755k;
+    private static ProtoBufType f6756l;
+    private static ProtoBufType f6757m;
+    private static ProtoBufType f6758n;
+    private static ProtoBufType f6759o;
+    private static ProtoBufType f6760p;
+    private static ProtoBufType f6761q;
+    private static ProtoBufType f6762r;
+    private static ProtoBufType f6763s;
+    private static ProtoBufType f6764t;
+    private static ProtoBufType f6765u;
+    private static ProtoBufType f6766v;
+    private static ProtoBufType f6767w;
+    private static ProtoBufType f6768x;
+    private static ProtoBufType f6769y;
+    private static ProtoBufType f6770z;
+
+    static {
+        f6748d = new ProtoBufType();
+        f6749e = new ProtoBufType();
+        f6750f = new ProtoBufType();
+        f6751g = new ProtoBufType();
+        f6752h = new ProtoBufType();
+        f6753i = new ProtoBufType();
+        f6754j = new ProtoBufType();
+        f6755k = new ProtoBufType();
+        f6756l = new ProtoBufType();
+        f6757m = new ProtoBufType();
+        f6758n = new ProtoBufType();
+        f6759o = new ProtoBufType();
+        f6760p = new ProtoBufType();
+        f6761q = new ProtoBufType();
+        f6762r = new ProtoBufType();
+        f6763s = new ProtoBufType();
+        f6764t = new ProtoBufType();
+        f6765u = new ProtoBufType();
+        f6766v = new ProtoBufType();
+        f6767w = new ProtoBufType();
+        f6745a = new ProtoBufType();
+        f6768x = new ProtoBufType();
+        f6769y = new ProtoBufType();
+        f6770z = new ProtoBufType();
+        f6743A = new ProtoBufType();
+        f6744B = new ProtoBufType();
+        f6746b = new ProtoBufType();
+        f6747c = new ProtoBufType();
+        f6748d.m10219a(542, 1, null).m10219a(548, 2, null).m10219a(548, 3, null);
+        f6749e.m10219a(533, 1, null).m10219a(292, 2, null).m10219a(531, 3, null);
+        f6750f.m10219a(533, 1, null).m10219a(531, 2, null);
+        f6751g.m10219a(292, 1, null).m10219a(539, 2, f6748d).m10219a(531, 3, null);
+        f6752h.m10219a(531, 1, null);
+        f6753i.m10219a(548, 1, null).m10219a(548, 2, null).m10219a(539, 3, f6751g).m10219a(531, 4, null);
+        f6754j.m10219a(548, 1, null).m10219a(531, 2, null);
+        f6755k.m10219a(292, 1, null).m10219a(292, 2, null).m10219a(292, 3, null).m10219a(548, 4, null).m10219a(548, 5, null);
+        f6756l.m10219a(292, 1, null);
+        f6757m.m10219a(292, 1, null);
+        f6759o.m10219a(292, 1, null);
+        f6760p.m10219a(292, 1, null).m10219a(536, 2, null);
+        f6761q.m10219a(536, 1, null).m10219a(548, 2, null).m10219a(548, 3, null).m10219a(548, 4, null).m10219a(531, 5, null).m10219a(548, 6, null).m10219a(548, 7, null).m10219a(533, 8, null).m10219a(1051, 9, f6760p);
+        f6762r.m10219a(533, 1, null).m10219a(539, 2, MessageSetProtos.f6741a);
+        f6763s.m10219a(283, 1, Principal.f6777a).m10219a(547, 2, null);
+        f6764t.m10219a(547, 1, null);
+        f6766v.m10219a(531, 1, null).m10219a(531, 2, null).m10219a(548, 3, null).m10219a(548, 11, null).m10219a(548, 4, null).m10219a(531, 5, null).m10219a(531, 6, null).m10219a(531, 7, null).m10219a(531, 8, null).m10219a(548, 9, null).m10219a(548, 10, null).m10219a(548, 12, null);
+        f6767w.m10219a(542, 1, null).m10219a(542, 2, null);
+        f6745a.m10219a(283, 3, Principal.f6778b).m10219a(1051, 5, f6767w).m10219a(541, 1, null).m10219a(1051, 2, f6766v).m10219a(542, 4, null).m10219a(548, 6, null).m10219a(536, 8, null);
+        f6768x.m10219a(283, 1, ThinmintCore.f6742a);
+        f6769y.m10219a(1051, 2, f6766v).m10219a(539, 3, DummyDataAccessTokenScopeOuterClassName.f6771a).m10219a(539, 7, StandardDatScope.f6803a).m10219a(531, 4, null).m10219a(531, 5, null).m10219a(548, 6, null).m10219a(548, 9, null).m10219a(542, 8, null).m10219a(1051, 10, Principal.f6778b).m10219a(539, 11, Principal.f6778b).m10219a(541, 1, null);
+        f6770z.m10219a(531, 1, null).m10219a(1051, 2, f6743A).m10219a(531, 3, null).m10219a(531, 4, null).m10219a(539, 5, f6744B);
+        f6743A.m10219a(531, 1, null);
+        f6744B.m10219a(542, 1, null).m10219a(548, 2, null).m10219a(539, 3, Principal.f6778b);
+        f6746b.m10219a(542, 1, null).m10219a(539, 2, f6749e).m10219a(539, 3, f6751g).m10219a(539, 4, f6755k).m10219a(539, 5, f6757m).m10219a(539, 6, f6759o).m10219a(539, 7, f6768x).m10219a(539, 8, f6762r).m10219a(539, 9, f6763s).m10219a(547, 10, null).m10219a(539, 11, f6764t).m10219a(539, 12, f6753i);
+        f6747c.m10219a(286, 1, null).m10219a(539, 2, f6750f).m10219a(539, 3, f6752h).m10219a(539, 4, f6756l).m10219a(539, 5, f6758n).m10219a(539, 6, f6761q).m10219a(539, 7, f6769y).m10219a(539, 10, f6770z).m10219a(539, 8, f6762r).m10219a(539, 9, f6765u).m10219a(539, 11, f6754j);
+    }
+}

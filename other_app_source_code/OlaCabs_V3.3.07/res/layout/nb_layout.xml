@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="5" android:orientation="0" android:id="@r/l_nativebutton" android:background="#3a3434" android:padding="5dp" android:layout_width="-1" android:layout_height="-2">
+    <ImageView android:id="@r/img_view" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:src="@r/hdfc" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <CheckBox android:textSize="16dp" android:textColor="0x106000b" android:id="@r/checkbox" android:layout_width="-2" android:layout_height="-2" android:checked="true" android:text="Remember User ID" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <Button android:textSize="16dp" android:textColor="0x106000b" android:id="@r/native_button" android:background="#615c5c" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item>
+        <shape android:shape="0">
+            <solid android:color="@color/ola_black_night" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="0">
+            <solid android:color="@color/ola_gray_text" />
+        </shape>
+    </item>
+</selector>

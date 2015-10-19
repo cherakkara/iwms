@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="@color/ola_grey_light_splash_screen" android:layout_width="-1" android:layout_height="-1">
+    <com.olacabs.customer.ui.widgets.FontTextView android:textColor="@color/ola_black" android:layout_gravity="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_recharge_amount" />
+    <com.olacabs.customer.ui.widgets.FontTextView android:textSize="@dimen/xlarge" android:textColor="@color/ola_black" android:layout_gravity="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@dimen/margin_medium" android:text="Rs 1000" />
+    <com.olacabs.customer.ui.widgets.FontTextView android:textSize="@dimen/small" android:textColor="@color/ola_gray_light_searchtext" android:layout_gravity="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@dimen/margin_medium" android:text="15% EXTRA applicable on this recharge" />
+    <com.olacabs.customer.ui.widgets.FontButton android:textColor="@drawable/text_black_button_selector" android:id="@id/button_pay_now" android:background="@drawable/bg_button_black_default" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/pay_now" />
+</LinearLayout>

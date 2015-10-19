@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="approve_otp" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/fourteenScaled</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+</resources>

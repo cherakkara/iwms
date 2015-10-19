@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="1" android:layout_width="-1" android:layout_height="-1">
+    <FrameLayout android:id="@r/parent" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true" />
+    <WebView android:id="@r/webview" android:layout_width="-1" android:layout_height="-1" />
+    <LinearLayout android:orientation="0" android:id="@r/trans_overlay" android:background="@r/background_drawable" android:layout_width="-1" android:layout_height="-1" />
+</RelativeLayout>

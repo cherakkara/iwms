@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-1">
+    <com.olacabs.customer.ui.widgets.FontEditText app:textSize="@dimen/xsmall" app:textColor="@color/cafe_intro_text" app:gravity="30" app:id="@id/leaveCommentText" app:background="@color/ola_white" app:paddingLeft="@dimen/margin_xxylarge" app:paddingTop="@dimen/margin_normal" app:paddingBottom="@dimen/margin_normal" app:focusableInTouchMode="true" app:layout_width="-1" app:layout_height="-2" app:layout_marginBottom="@dimen/rate_ride_leave_comment_height" app:minHeight="@dimen/rate_ride_feedback_height" app:hint="@string/ride_summary_leave_comment" app:editable="true" app:inputType="20001" app:isScrollContainer="true" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Regular" />
+</LinearLayout>

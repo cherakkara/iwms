@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:background="@color/ola_gray_text" app:layout_width="-1" app:layout_height="-1" app:weightSum="1.0">
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:gravity="11" app:layout_gravity="11" app:id="@id/cancel_order" app:padding="@dimen/margin_medium_large" app:layout_width="-2" app:layout_height="-2" app:text="CANCEL" app:font="@string/font_OpenSans_Bold" />
+    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:gravity="11" app:layout_gravity="11" app:id="@id/order_status" app:padding="@dimen/margin_medium_large" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Bold" />
+    <ListView app:id="@id/product_list" app:layout_width="-1" app:layout_height="0dp" app:layout_margin="@dimen/margin_large" app:divider="0x106000d" app:dividerHeight="3dp" app:layout_weight="0.5" />
+</LinearLayout>

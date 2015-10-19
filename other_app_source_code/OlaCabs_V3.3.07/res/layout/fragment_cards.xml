@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textColor="#ff0000" android:gravity="11" android:layout_gravity="11" android:id="@r/issuerDownTextView" android:background="@r/error_box" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" />
+        <include layout="@r/card_details_layout" />
+        <LinearLayout android:orientation="0" android:id="@r/haveCvvExpiryLinearLayout" android:padding="10dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:textColor="@color/blue" android:id="@r/haveClickHereTextView" android:clickable="true" android:layout_width="-2" android:layout_height="-2" android:text="@string/click_here" />
+            <TextView android:id="@r/haveCvvAndExpiryTextView" android:layout_width="-2" android:layout_height="-2" android:text="@string/if_cvv_and_expiry_on_card" />
+        </LinearLayout>
+        <LinearLayout android:orientation="0" android:id="@r/dontHaveCvvExpiryLinearLayout" android:padding="10dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:textColor="@color/blue" android:id="@r/dontHaveClickHereTextView" android:clickable="true" android:layout_width="-2" android:layout_height="-2" android:text="@string/click_here" />
+            <TextView android:id="@r/dontHaveCvvAndExpiryTextView" android:layout_width="-2" android:layout_height="-2" android:text="@string/if_dont_cvv_and_expiry_on_card" />
+        </LinearLayout>
+        <Button android:enabled="false" android:textStyle="1" android:textColor="@color/white" android:layout_gravity="11" android:id="@r/makePayment" android:background="@r/button" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="@string/pay_now" />
+    </LinearLayout>
+</ScrollView>

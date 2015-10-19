@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="11" android:orientation="1" android:background="@r/progress_dialog" android:paddingLeft="65dp" android:paddingTop="35dp" android:paddingRight="65dp" android:paddingBottom="35dp" android:layout_width="-1" android:layout_height="-1">
+    <ImageView android:layout_gravity="11" android:id="@r/rotate_image" android:background="@r/error_large" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="30dp" />
+    <TextView android:textColor="0x106000c" android:gravity="11" android:layout_gravity="11" android:id="@r/progress" android:paddingTop="40dp" android:layout_width="-2" android:layout_height="-2" android:text="@string/process_your_request" />
+    <TextView android:textColor="0x106000c" android:gravity="1" android:layout_gravity="1" android:id="@r/progresstext" android:paddingTop="20dp" android:layout_width="-2" android:layout_height="-2" android:text="@string/please_wait" />
+</LinearLayout>

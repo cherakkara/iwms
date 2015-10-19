@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="@r/enterCardDetailsLayout" android:layout_width="-1" android:layout_height="-2" android:layout_margin="20dp">
+    <TextView android:id="@r/enterCardDetailsTextView" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="15dp" android:text="Enter your card details." />
+    <EditText android:id="@r/cardNumberEditText" android:background="@r/box" android:padding="3dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="1dp" android:hint="@string/card_number" android:maxLength="19" android:inputType="2" />
+    <EditText android:id="@r/nameOnCardEditText" android:background="@r/box" android:padding="3dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="1dp" android:hint="@string/name_on_card" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 " />
+    <LinearLayout android:orientation="1" android:id="@r/expiryCvvLinearLayout" android:layout_width="-1" android:layout_height="-2">
+        <EditText android:layout_gravity="11" android:id="@r/expiryDatePickerEditText" android:background="@r/box" android:padding="3dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="1dp" android:hint="@string/expires" android:inputType="14" />
+        <EditText android:layout_gravity="11" android:id="@r/cvvEditText" android:background="@r/box" android:padding="3dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="1dp" android:hint="@string/cvv" android:password="true" android:maxLength="3" android:inputType="12" />
+    </LinearLayout>
+    <CheckBox android:id="@r/storeCardCheckBox" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:text="@string/store_card_check" />
+    <EditText android:id="@r/cardNameEditText" android:background="@r/box" android:padding="3dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="1dp" android:hint="@string/card_name" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 " />
+</LinearLayout>

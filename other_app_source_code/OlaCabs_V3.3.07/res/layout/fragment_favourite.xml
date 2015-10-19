@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/topBarLayout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/fav_action_bar_view" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/favourites" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:layout_gravity="13" app:id="@id/fav_menu_button" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:src="@drawable/bg_button_nav_back" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@drawable/bg_header_text_selector" app:gravity="11" app:layout_gravity="5" app:id="@id/fav_edit_txt" app:background="@drawable/bg_pressed_state" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-1" app:text="@string/edit" app:font="@string/font_OpenSans_Regular" />
+    </FrameLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:id="@id/line_view" app:background="@color/ola_orange_light_summaryline" app:layout_width="-1" app:layout_height="1dp" app:layout_below="@id/topBarLayout" />
+    <LinearLayout app:orientation="0" app:id="@id/bottomTab" app:background="@color/ola_black_text" app:layout_width="-1" app:layout_height="@dimen/alert_dialog_title_height" app:layout_alignParentBottom="true"
+        <LinearLayout app:orientation="1" app:id="@id/newFavAddLayout" app:padding="@dimen/margin_small" app:layout_width="0dp" app:layout_height="-1" app:layout_weight="4.0">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_sign_up_header_text" app:id="@id/addNewFavText" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_normal" app:layout_marginTop="@dimen/margin_nano" app:text="@string/add_new_favourites" app:font="@string/font_OpenSans_Regular" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_white" app:ellipsize="3" app:id="@id/addressNewFavText" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_normal" app:text="" app:singleLine="true" app:font="@string/font_OpenSans_Regular" />
+        </LinearLayout>
+        <View app:background="@color/ola_sign_up_header_text" app:layout_width="1dp" app:layout_height="-1" app:layout_marginTop="@dimen/margin_small" app:layout_marginBottom="@dimen/margin_small" />
+        <RelativeLayout app:gravity="11" app:id="@id/addNewFavourite" app:layout_width="0dp" app:layout_height="-1" app:layout_weight="1.0">
+            <ImageView app:layout_width="-2" app:layout_height="-2" app:src="@drawable/bg_add_new_fav_button" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="1" app:id="@id/fav_layout" app:background="@color/ola_white" app:layout_above="@id/bottomTab" app:layout_below="@id/line_view" style="@style/fill" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ola_white" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_centerInParent="true">
+        <com.olacabs.customer.ui.widgets.FontTextView android:textSize="@dimen/large" android:textColor="@color/ola_sign_up_header_text" android:gravity="11" android:layout_gravity="11" android:id="@id/sos_screen_text" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="@dimen/margin_large" android:text="Sending SOS alert to your
+Emergency Contact." />
+        <com.olacabs.customer.ui.widgets.KaaliPeeliProgressView android:id="@id/progress_view" android:padding="@dimen/margin_xxxlarge" android:layout_width="-1" android:layout_height="-2" android:layout_margin="@dimen/margin_xlarge" />
+    </LinearLayout>
+    <com.olacabs.customer.ui.widgets.FontButton android:textColor="@drawable/text_black_button_selector" android:id="@id/cancel_button" android:background="@drawable/bg_button_black_default" android:layout_width="-1" android:layout_height="-2" android:text="CANCEL" android:layout_alignParentBottom="true" />
+</RelativeLayout>

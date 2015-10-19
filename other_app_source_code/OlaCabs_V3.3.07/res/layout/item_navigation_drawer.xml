@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="0" app:background="@drawable/list_background" app:layout_width="-1" app:layout_height="-2">
+    <ImageView app:id="@id/item_image" app:padding="@dimen/margin_small" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_medium" app:src="@drawable/temp_time_grey" />
+    <RelativeLayout app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_small">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@drawable/text_nav_drawer" app:id="@id/item_name" app:paddingTop="@dimen/margin_medium" app:paddingBottom="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_test" app:layout_centerVertical="true" app:font="@string/font_OpenSans_Light" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/oval_text_color" app:id="@id/item_value" app:background="@drawable/oval_background" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:layout_marginRight="@dimen/margin_xlarge" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:font="@string/font_OpenSans_Semibold" />
+        <ImageView app:id="@id/item_alert" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:layout_marginRight="@dimen/margin_xlarge" app:src="@drawable/ic_profile_alert" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+        <View app:background="@color/ola_black_text" app:layout_width="-1" app:layout_height="1dp" app:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

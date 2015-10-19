@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="#ffffff" android:layout_width="-2" android:layout_height="-2">
+    <DatePicker android:id="@r/datePicker" android:paddingLeft="@dimen/date_picker_padding" android:paddingRight="@dimen/date_picker_padding" android:layout_width="-2" android:layout_height="-2" android:spinnersShown="true" android:calendarViewShown="false" android:datePickerMode="1" />
+    <View android:background="#cbcbcb" android:layout_width="-1" android:layout_height="2dp" />
+    <Button android:layout_gravity="5" android:id="@r/datePickerOkButton" android:background="@r/SlidingUpPanelLayout_umanoPanelHeight" android:layout_width="-1" android:layout_height="-2" android:text="Ok" />
+</LinearLayout>

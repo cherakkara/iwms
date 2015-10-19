@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-1">
+    <com.olacabs.customer.ui.widgets.FontButton app:id="@id/sign_up_submit_btn" app:font="@string/font_OpenSans_Regular" style="@style/Ola_button_splash" />
+</LinearLayout>

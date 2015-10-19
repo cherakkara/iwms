@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-1">
+    <RelativeLayout app:id="@id/saved_card_header" app:paddingLeft="@dimen/margin_medium" app:paddingTop="@dimen/margin_small" app:paddingRight="@dimen/margin_medium" app:paddingBottom="@dimen/margin_small" app:layout_width="-1" app:layout_height="-2">
+        <LinearLayout app:layout_width="-2" app:layout_height="-2">
+            <RadioButton app:layout_gravity="10" app:id="@id/radio_selectable" app:focusable="false" app:clickable="false" app:layout_width="-2" app:layout_height="-2" app:button="@drawable/radio_button_payment_option" />
+            <ImageView app:layout_gravity="10" app:id="@id/card_type_image" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_micro_small" app:layout_marginRight="@dimen/margin_micro_small" app:src="@r/maestro" />
+            <View app:id="@id/card_image_divider" app:background="@color/ola_black_text" app:layout_width="1dp" app:layout_height="-1" app:layout_marginTop="@dimen/margin_micro_small" app:layout_marginBottom="@dimen/margin_micro_small" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:layout_gravity="10" app:id="@id/card_number" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_micro_small" app:text="4321 XXXX XXXX 4321" app:font="@string/font_OpenSans_Regular" />
+        </LinearLayout>
+        <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@drawable/text_green_text_selector" app:id="@id/delete_card" app:visibility="2" app:layout_width="-2" app:layout_height="-2" app:text="@string/text_delete" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout app:orientation="1" app:id="@id/saved_card_child" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_xxxlarge" app:layout_marginBottom="@dimen/margin_medium"
+        <LinearLayout app:orientation="0" app:layout_width="-2" app:layout_height="-2">
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_gray_light_text" app:id="@id/bank_name" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:text="HDFC" app:font="@string/font_OpenSans_Regular" />
+            <View app:background="@color/ola_gray_light_text" app:layout_width="1dp" app:layout_height="-1" />
+            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_gray_light_text" app:id="@id/card_holder_name" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:text="Azhagiri S" app:font="@string/font_OpenSans_Regular" />
+        </LinearLayout>
+        <LinearLayout app:orientation="0" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_xlarge">
+            <com.olacabs.customer.ui.widgets.FontEditText app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:textColorHint="@color/ola_gray_light_text" app:layout_gravity="11" app:id="@r/cvvEditText" app:background="@drawable/bg_card_details" app:paddingLeft="@dimen/margin_normal" app:paddingTop="@dimen/margin_medium" app:paddingRight="@dimen/margin_xxlarge" app:paddingBottom="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:hint="@string/hint_cvv" app:singleLine="true" app:maxLength="4" app:inputType="12" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Regular" />
+            <ImageView app:layout_gravity="11" app:paddingLeft="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/cvv_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

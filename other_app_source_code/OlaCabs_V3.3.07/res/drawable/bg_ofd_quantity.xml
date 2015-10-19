@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="0">
+    <padding android:left="12dp" android:top="1dp" android:right="12dp" android:bottom="1dp" />
+    <solid android:color="@color/ola_sos_arc" />
+    <corners android:topLeftRadius="16dp" android:topRightRadius="16dp" android:bottomLeftRadius="16dp" android:bottomRightRadius="16dp" />
+</shape>

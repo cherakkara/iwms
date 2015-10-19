@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ScrollView android:layout_width="-1" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="0.8">
+        <com.olacabs.customer.ui.widgets.SlowPagerView android:id="@id/pager" android:layout_width="-1" android:layout_height="-1" />
+    </ScrollView>
+    <ImageView android:layout_gravity="1" android:id="@id/page_indicator_image" android:layout_width="-2" android:layout_height="0dp" android:src="@drawable/loader_1" android:layout_weight="0.15" />
+    <View android:id="@id/invisible_view" android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="0.05" />
+</LinearLayout>

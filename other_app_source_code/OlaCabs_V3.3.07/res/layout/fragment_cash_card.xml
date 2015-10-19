@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1" android:layout_margin="10dp">
+        <TextView android:padding="10dp" android:layout_width="-2" android:layout_height="-2" android:text="@string/pay_by_cash_card" />
+        <Spinner android:id="@r/cashCardSpinner" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" />
+        <TextView android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" android:text="@string/cashCardNote" />
+        <FrameLayout android:id="@r/cardFragmentPlaceHolder" android:layout_width="-1" android:layout_height="-2" android:layout_margin="-10dp" />
+        <Button android:enabled="false" android:textStyle="1" android:textColor="@color/white" android:layout_gravity="11" android:id="@r/cashCardMakePayment" android:background="@r/button" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" android:text="@string/pay_now" />
+    </LinearLayout>
+</ScrollView>

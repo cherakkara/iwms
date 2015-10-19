@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_selected="false">
+        <shape android:shape="0">
+            <solid android:color="@color/ola_white" />
+            <corners android:radius="@dimen/margin_nano" />
+            <stroke android:width="0.5dp" android:color="@color/ola_gray_light_disable_text" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="0">
+            <solid android:color="@color/ola_gray_light_select_background" />
+            <corners android:radius="@dimen/margin_nano" />
+            <stroke android:width="0.5dp" android:color="@color/ola_pay_outline" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="0">
+            <solid android:color="@color/ola_white" />
+            <corners android:radius="@dimen/margin_nano" />
+            <stroke android:width="0.5dp" android:color="@color/ola_gray_light_disable_text" />
+        </shape>
+    </item>
+</selector>

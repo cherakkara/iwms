@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-1">
+    <FrameLayout app:id="@id/topBarLayout" app:background="@color/ola_white" app:visibility="0" app:layout_width="-1" app:layout_height="?unknown_attr_ref: 10102eb">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/medium" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/rideTitle" app:background="@color/ola_white" app:layout_width="-2" app:layout_height="-2" app:text="@string/title_activity_ride_details" app:font="@string/font_OpenSans_Light" />
+        <ImageView app:layout_gravity="13" app:id="@id/backImageView" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_large" app:layout_width="-2" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:src="@drawable/bg_button_nav_back" />
+    </FrameLayout>
+    <com.olacabs.customer.ui.widgets.FontTextView app:background="@color/ola_yellow_light_header_line" app:layout_width="-1" app:layout_height="1px" />
+    <ViewStub app:id="@id/stub_sad_error" app:layout="@layout/view_sad_error" app:inflatedId="@id/sad_error_face" app:layout_width="-1" app:layout_height="-1" app:layout_centerInParent="true" />
+    <RelativeLayout app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1">
+        <LinearLayout app:orientation="1" app:id="@id/bottomTab" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_alignParentBottom="true">
+            <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" />
+            <LinearLayout app:layout_gravity="11" app:orientation="0" app:id="@id/rideOptions" app:background="@drawable/round_corrners" app:layout_width="-1" app:layout_height="-2"
+                <LinearLayout app:gravity="1" app:orientation="1" app:id="@id/favPickupLayout" app:background="@drawable/bg_ride_detail_tab" app:padding="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                    <ImageView app:id="@id/option1" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:src="@drawable/bg_button_ride_fav_pickup" app:adjustViewBounds="true" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@drawable/text_button_ride_detail_tabs" app:id="@id/favPickupText" app:paddingTop="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_fav_pickup" app:font="@string/font_OpenSans_Semibold" />
+                </LinearLayout>
+                <View app:layout_gravity="10" app:background="@color/ola_up_vm_text_color" app:layout_width="1dp" app:layout_height="-1" />
+                <LinearLayout app:gravity="1" app:orientation="1" app:id="@id/couponLayout" app:background="@drawable/bg_ride_detail_tab" app:padding="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                    <ImageView app:id="@id/option3" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:src="@drawable/bg_button_ride_coupon_code" app:adjustViewBounds="true" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@drawable/text_button_ride_detail_tabs" app:id="@id/couponCodeText" app:paddingTop="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_use_coupon" app:font="@string/font_OpenSans_Semibold" />
+                </LinearLayout>
+                <View app:layout_gravity="10" app:background="@color/ola_up_vm_text_color" app:layout_width="1dp" app:layout_height="-1" />
+                <LinearLayout app:gravity="1" app:orientation="1" app:id="@id/issueReport" app:background="@drawable/bg_ride_detail_tab" app:padding="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                    <ImageView app:id="@id/option4" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:src="@drawable/bg_button_report_issue" app:adjustViewBounds="true" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@drawable/text_button_ride_detail_tabs" app:id="@id/reportIssueText" app:paddingTop="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_report_issue" app:font="@string/font_OpenSans_Semibold" />
+                </LinearLayout>
+                <View app:layout_gravity="10" app:background="@color/ola_up_vm_text_color" app:layout_width="1dp" app:layout_height="-1" />
+                <LinearLayout app:gravity="1" app:orientation="1" app:id="@id/trackRide" app:background="@drawable/bg_ride_detail_tab" app:padding="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                    <ImageView app:id="@id/option5" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:src="@drawable/bg_button_track_ride" app:adjustViewBounds="true" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@drawable/text_button_ride_detail_tabs" app:id="@id/trackRideText" app:paddingTop="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_track_ride" app:font="@string/font_OpenSans_Semibold" />
+                </LinearLayout>
+                <View app:layout_gravity="10" app:background="@color/ola_up_vm_text_color" app:layout_width="1dp" app:layout_height="-1" />
+                <LinearLayout app:gravity="1" app:orientation="1" app:id="@id/invoiceLayout" app:background="@drawable/bg_ride_detail_tab" app:padding="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                    <ImageView app:id="@id/option2" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:src="@drawable/bg_button_ride_mail_invoice" app:adjustViewBounds="true" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@drawable/text_button_ride_detail_tabs" app:id="@id/mailInvoiceText" app:paddingTop="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_mail_invoice" app:font="@string/font_OpenSans_Semibold" />
+                </LinearLayout>
+                <View app:layout_gravity="10" app:background="@color/ola_up_vm_text_color" app:layout_width="1dp" app:layout_height="-1" />
+                <LinearLayout app:gravity="1" app:orientation="1" app:id="@id/cancelLayout" app:background="@drawable/bg_ride_detail_tab" app:padding="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                    <ImageView app:id="@id/option6" app:background="@r/SlidingUpPanelLayout_umanoPanelHeight" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_small" app:src="@drawable/bg_button_cancel_ride" app:adjustViewBounds="true" />
+                    <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall" app:textColor="@drawable/text_button_ride_detail_tabs" app:id="@id/cancelText" app:paddingTop="@dimen/margin_micro" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_cancel_ride" app:font="@string/font_OpenSans_Semibold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView app:background="@color/ola_white" app:layout_width="-1" app:layout_height="-1" app:layout_above="@id/bottomTab">
+            <RelativeLayout app:gravity="11" app:id="@id/scrollLayout" app:layout_width="-1" app:layout_height="-1">
+                <ProgressBar app:id="@id/emptyView" app:visibility="0" app:layout_width="-2" app:layout_height="-2" app:indeterminateDrawable="@drawable/custom_progress_background" app:layout_centerInParent="true" />
+                <LinearLayout app:gravity="30" app:orientation="1" app:id="@id/rideDetails" app:background="@color/ola_white" app:visibility="1" app:layout_width="-1" app:layout_height="-2"
+                    <LinearLayout app:orientation="1" app:layout_width="-1" app:layout_height="-2">
+                        <RelativeLayout app:orientation="0" app:id="@id/rideInfoLayout" app:background="@color/ola_black_text" app:padding="@dimen/margin_micro" app:visibility="0" app:layout_width="-1" app:layout_height="-2">
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="10sp" app:textColor="@color/ola_white" app:id="@id/ride_status" app:background="@color/ola_gray_light_searchtext" app:paddingLeft="@dimen/margin_micro" app:paddingTop="@dimen/margin_nano" app:paddingRight="@dimen/margin_micro" app:paddingBottom="@dimen/margin_nano" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_micro" app:layout_marginRight="@dimen/margin_micro" app:text="@string/text_completed" app:layout_alignParentRight="true" app:font="@string/font_OpenSans_Regular" />
+                            <ImageView app:id="@id/categoryBookedImageView" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_normal" app:layout_marginTop="@dimen/margin_micro" app:layout_marginRight="@dimen/margin_micro" app:layout_marginBottom="@dimen/margin_normal" app:layout_alignParentLeft="true" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xsmall" app:textColor="@color/ola_white" app:id="@id/rideDesc" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_micro_small" app:layout_toRightOf="@id/categoryBookedImageView" app:font="@string/font_OpenSans_Semibold" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_gray_light_searchtext" app:id="@id/ridecrn" app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_micro_small" app:layout_toRightOf="@id/categoryBookedImageView" app:layout_below="@id/rideDesc" app:font="@string/font_OpenSans_Regular" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout app:background="#dddddd" app:padding="1dp" app:layout_width="-1" app:layout_height="-2">
+                        <ImageView app:id="@id/staticmap" app:layout_width="-1" app:layout_height="150dp" app:scaleType="6" />
+                    </LinearLayout>
+                    <LinearLayout app:orientation="0" app:background="@color/ola_white" app:paddingLeft="@dimen/margin_micro_small_micro" app:paddingTop="@dimen/margin_micro_small_micro" app:paddingBottom="@dimen/margin_micro_small_micro" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:layout_marginTop="@dimen/margin_micro">
+                        <ImageView app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="1dp" app:layout_marginTop="@dimen/margin_micro" app:src="@drawable/ic_ride_details_address" />
+                        <LinearLayout app:orientation="1" app:layout_width="-2" app:layout_height="-2">
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_green_dark" app:id="@id/addLabel" app:background="0x106000d" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:text="@string/ride_estimate_pickup" app:font="@string/font_OpenSans_Semibold" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/addName" app:background="0x106000d" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:font="@string/font_OpenSans_Semibold" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/addLandmark" app:background="0x106000d" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:font="@string/font_OpenSans_Semibold" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall1" app:textColor="@color/ola_gray_light_text" app:id="@id/addDetail" app:background="0x106000d" app:paddingBottom="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:font="@string/font_OpenSans_Regular" />
+                            <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_medium" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout app:orientation="0" app:id="@id/drop_layout" app:background="@color/ola_white" app:paddingLeft="@dimen/margin_micro_small_micro" app:paddingBottom="@dimen/margin_micro_small_micro" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium">
+                        <ImageView app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="1dp" app:layout_marginTop="@dimen/margin_micro" app:src="@drawable/ic_ride_details_address" />
+                        <LinearLayout app:orientation="1" app:layout_width="-2" app:layout_height="-2">
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxsmall" app:textColor="@color/ola_red_dark" app:gravity="50" app:id="@id/addDropLabel" app:background="0x106000d" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:text="@string/ride_estimate_drop" app:font="@string/font_OpenSans_Semibold" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/drop_addName" app:background="0x106000d" app:paddingBottom="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:font="@string/font_OpenSans_Semibold" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/drop_addLandmark" app:background="0x106000d" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:font="@string/font_OpenSans_Semibold" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall1" app:textColor="@color/ola_gray_light_text" app:id="@id/drop_addDetail" app:background="0x106000d" app:paddingBottom="@dimen/margin_medium" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium" app:font="@string/font_OpenSans_Regular" />
+                            <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_medium" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout app:orientation="0" app:background="@color/ola_white" app:paddingLeft="@dimen/margin_micro_small_micro" app:paddingTop="@dimen/margin_micro_small_micro" app:paddingBottom="@dimen/margin_micro_small_micro" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/xsmall">
+                        <ImageView app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="1dp" app:src="@drawable/ic_ride_clock_icon" />
+                        <LinearLayout app:orientation="1" app:layout_width="-2" app:layout_height="-2">
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:layout_gravity="11" app:id="@id/pickTimeText" app:background="0x106000d" app:paddingBottom="@dimen/margin_small_medium" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_micro_small" app:text="" app:font="@string/font_OpenSans_Semibold" />
+                            <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout app:orientation="1" app:id="@id/tripInfo" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="42dp" app:layout_marginTop="@dimen/margin_micro_small_micro"
+                        <LinearLayout app:gravity="11" app:layout_gravity="11" app:orientation="0" app:background="@color/ola_white" app:padding="@dimen/margin_micro_small_micro" app:visibility="0" app:layout_width="-1" app:layout_height="-2"
+                            <LinearLayout app:orientation="1" app:paddingLeft="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="16sp" app:textColor="@color/ola_black_text" app:id="@id/ridedistance" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Semibold" />
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall1" app:textColor="@color/ola_gray_light_text" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_ride_distance" app:font="@string/font_OpenSans_Regular" />
+                            </LinearLayout>
+                            <View app:background="@color/ola_up_vm_text_color" app:layout_width="1dp" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:layout_marginRight="@dimen/margin_micro" />
+                            <LinearLayout app:orientation="1" app:paddingLeft="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="16sp" app:textColor="@color/ola_black_text" app:id="@id/timetaken" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Semibold" />
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall1" app:textColor="@color/ola_gray_light_text" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_time_taken" app:font="@string/font_OpenSans_Regular" />
+                            </LinearLayout>
+                            <View app:background="@color/ola_up_vm_text_color" app:layout_width="1dp" app:layout_height="-1" app:layout_marginLeft="@dimen/margin_micro" app:layout_marginRight="@dimen/margin_micro" />
+                            <LinearLayout app:orientation="1" app:paddingLeft="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:layout_weight="1.0">
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="16sp" app:textColor="@color/ola_black_text" app:id="@id/waittime" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Semibold" />
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall1" app:textColor="@color/ola_gray_light_text" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_wait_time" app:font="@string/font_OpenSans_Regular" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View app:background="@color/ola_up_vm_text_color" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_large" app:layout_marginTop="@dimen/margin_small" />
+                    </LinearLayout>
+                    <LinearLayout app:orientation="0" app:id="@id/localTaxibillingInfo" app:background="@color/ola_white" app:paddingLeft="@dimen/margin_micro_small_micro" app:paddingRight="@dimen/margin_micro_small_micro" app:visibility="2" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large" app:layout_marginRight="@dimen/margin_large">
+                        <ImageView app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="1dp" app:layout_marginTop="@dimen/margin_micro_small_micro" app:src="@drawable/ic_ride_details_invoice_pressed" />
+                        <RelativeLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2">
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:paddingLeft="@dimen/margin_small" app:paddingTop="@dimen/margin_micro_small_micro" app:paddingRight="@dimen/margin_small" app:paddingBottom="@dimen/margin_micro_small_micro" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_total_bill_local_taxi" app:layout_alignParentLeft="true" app:font="@string/font_OpenSans_Semibold" />
+                            <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/ola_money_local_balance" app:paddingLeft="@dimen/margin_small" app:paddingTop="@dimen/margin_micro_small_micro" app:paddingRight="@dimen/margin_small" app:paddingBottom="@dimen/margin_micro_small_micro" app:layout_width="-2" app:layout_height="-2" app:layout_alignParentRight="true" app:font="@string/font_OpenSans_Semibold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout app:orientation="0" app:id="@id/billingInfo" app:background="@color/ola_white" app:padding="5dp" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_large" app:layout_marginRight="@dimen/margin_large">
+                        <ImageView app:layout_width="-2" app:layout_height="-2" app:layout_marginLeft="1dp" app:layout_marginTop="@dimen/margin_micro_small" app:src="@drawable/ic_ride_details_invoice_pressed" />
+                        <LinearLayout app:orientation="1" app:layout_width="-2" app:layout_height="-2">
+                            <View app:layout_width="-1" app:layout_height="@dimen/margin_nano" app:layout_marginLeft="@dimen/margin_medium" />
+                            <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium">
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/totalBillText" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_total_bill" app:font="@string/font_OpenSans_Semibold" />
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:gravity="5" app:id="@id/totalBillValueText" app:layout_width="-1" app:layout_height="-2" app:font="@string/font_OpenSans_Bold" />
+                            </LinearLayout>
+                            <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium">
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black_text" app:id="@id/totalPaidText" app:layout_width="-2" app:layout_height="-2" app:text="@string/ride_details_total_pay" app:font="@string/font_OpenSans_Semibold" />
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/small" app:textColor="@color/ola_black" app:gravity="5" app:id="@id/totalPaidValueText" app:layout_width="-1" app:layout_height="-2" app:font="@string/font_OpenSans_Bold" />
+                            </LinearLayout>
+                            <View app:layout_width="-1" app:layout_height="3dp" app:layout_marginLeft="@dimen/margin_medium" />
+                            <LinearLayout app:orientation="0" app:layout_width="-1" app:layout_height="-2" app:layout_marginLeft="@dimen/margin_medium">
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall1" app:textColor="@color/ola_gray_light_text" app:gravity="3" app:id="@id/youSave" app:layout_width="-2" app:layout_height="-2" app:font="@string/font_OpenSans_Regular" />
+                                <com.olacabs.customer.ui.widgets.FontTextView app:textSize="@dimen/xxxsmall1" app:textColor="@color/ola_gray_light_text" app:gravity="5" app:id="@id/totalPayDetail" app:layout_width="-1" app:layout_height="-2" app:font="@string/font_OpenSans_Regular" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_medium" app:layout_marginTop="@dimen/margin_small" />
+                    <View app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="@dimen/margin_medium" app:layout_marginTop="@dimen/margin_small" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

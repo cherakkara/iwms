@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+        <Spinner android:id="@r/selectCardSpinner" android:layout_width="-1" android:layout_height="-2" />
+        <Button android:textStyle="1" android:textColor="@color/white" android:layout_gravity="11" android:id="@r/deleteCard" android:background="@r/button" android:layout_width="-1" android:layout_height="-2" android:layout_margin="10dp" android:text="@string/delete_card" />
+    </LinearLayout>
+</ScrollView>

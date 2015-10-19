@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:orientation="1" app:paddingTop="@dimen/margin_medium" app:paddingBottom="@dimen/margin_medium" app:layout_width="-1" app:layout_height="-1"
+    <LinearLayout app:orientation="0" app:layout_width="-2" app:layout_height="-2">
+        <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_gray_light_searchtext" app:id="@id/bank_name" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:text="HDFC" />
+        <View app:background="@color/ola_gray_light_searchtext" app:layout_width="1dp" app:layout_height="-1" />
+        <com.olacabs.customer.ui.widgets.FontTextView app:textColor="@color/ola_gray_light_searchtext" app:id="@id/card_holder_name" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:text="Azhagiri S" />
+    </LinearLayout>
+    <LinearLayout app:orientation="0" app:paddingLeft="@dimen/margin_medium" app:paddingRight="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:layout_marginTop="@dimen/margin_medium">
+        <com.olacabs.customer.ui.widgets.FontEditText app:textSize="@dimen/xsmall" app:textColor="@color/ola_black_text" app:textColorHint="@color/ola_gray_light_searchtext" app:layout_gravity="11" app:id="@r/cvvEditText" app:background="@drawable/bg_payment_cell" app:paddingLeft="@dimen/margin_normal" app:paddingTop="@dimen/margin_medium" app:paddingRight="@dimen/margin_normal" app:paddingBottom="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:hint="@string/hint_cvv" app:singleLine="true" app:maxLength="4" app:inputType="12" app:textCursorDrawable="@r/SlidingUpPanelLayout_umanoPanelHeight" app:font="@string/font_OpenSans_Regular" />
+        <ImageView app:layout_gravity="11" app:paddingLeft="@dimen/margin_medium" app:layout_width="-2" app:layout_height="-2" app:src="@drawable/cvv_icon" />
+    </LinearLayout>
+</LinearLayout>

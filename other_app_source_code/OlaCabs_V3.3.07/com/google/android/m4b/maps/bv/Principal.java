@@ -1,0 +1,90 @@
+package com.google.android.m4b.maps.bv;
+
+import com.google.android.m4b.maps.p046d.ProtoBufType;
+
+/* renamed from: com.google.android.m4b.maps.bv.e */
+public final class Principal {
+    private static ProtoBufType f6776A;
+    public static final ProtoBufType f6777a;
+    public static final ProtoBufType f6778b;
+    public static final ProtoBufType f6779c;
+    private static ProtoBufType f6780d;
+    private static ProtoBufType f6781e;
+    private static ProtoBufType f6782f;
+    private static ProtoBufType f6783g;
+    private static ProtoBufType f6784h;
+    private static ProtoBufType f6785i;
+    private static ProtoBufType f6786j;
+    private static ProtoBufType f6787k;
+    private static ProtoBufType f6788l;
+    private static ProtoBufType f6789m;
+    private static ProtoBufType f6790n;
+    private static ProtoBufType f6791o;
+    private static ProtoBufType f6792p;
+    private static ProtoBufType f6793q;
+    private static ProtoBufType f6794r;
+    private static ProtoBufType f6795s;
+    private static ProtoBufType f6796t;
+    private static ProtoBufType f6797u;
+    private static ProtoBufType f6798v;
+    private static ProtoBufType f6799w;
+    private static ProtoBufType f6800x;
+    private static ProtoBufType f6801y;
+    private static ProtoBufType f6802z;
+
+    static {
+        f6780d = new ProtoBufType();
+        f6781e = new ProtoBufType();
+        f6782f = new ProtoBufType();
+        f6783g = new ProtoBufType();
+        f6784h = new ProtoBufType();
+        f6785i = new ProtoBufType();
+        f6786j = new ProtoBufType();
+        f6787k = new ProtoBufType();
+        f6788l = new ProtoBufType();
+        f6777a = new ProtoBufType();
+        f6789m = new ProtoBufType();
+        f6790n = new ProtoBufType();
+        f6791o = new ProtoBufType();
+        f6792p = new ProtoBufType();
+        f6793q = new ProtoBufType();
+        f6794r = new ProtoBufType();
+        f6795s = new ProtoBufType();
+        f6796t = new ProtoBufType();
+        f6797u = new ProtoBufType();
+        f6798v = new ProtoBufType();
+        f6799w = new ProtoBufType();
+        f6800x = new ProtoBufType();
+        f6801y = new ProtoBufType();
+        f6778b = new ProtoBufType();
+        f6779c = new ProtoBufType();
+        f6802z = new ProtoBufType();
+        f6776A = new ProtoBufType();
+        f6780d.m10219a(275, 1, null);
+        f6781e.m10219a(275, 1, null);
+        f6782f.m10219a(292, 1, null);
+        f6783g.m10219a(292, 1, null);
+        f6784h.m10219a(292, 1, null).m10219a(531, 2, null);
+        f6785i.m10219a(292, 1, null);
+        f6786j.m10219a(275, 8, null);
+        f6787k.m10219a(275, 1, null);
+        f6788l.m10219a(275, 1, null).m10219a(275, 2, null).m10219a(531, 3, null);
+        f6777a.m10219a(542, 1, null).m10219a(531, 2, null).m10219a(547, 3, null).m10219a(533, 4, null);
+        f6789m.m10219a(283, 1, f6777a);
+        f6790n.m10219a(547, 1, null);
+        f6791o.m10219a(277, 1, null).m10219a(291, 2, null);
+        f6793q.m10219a(292, 1, null);
+        f6794r.m10219a(292, 1, null).m10219a(548, 2, null);
+        f6795s.m10219a(292, 1, null).m10219a(292, 2, null);
+        f6796t.m10219a(292, 1, null);
+        f6797u.m10219a(531, 1, null).m10219a(531, 2, null).m10219a(531, 3, null);
+        f6798v.m10219a(531, 1, null).m10219a(533, 2, null);
+        f6799w.m10219a(548, 1, null).m10219a(533, 2, null);
+        f6800x.m10219a(548, 1, null).m10219a(533, 2, null);
+        f6801y.m10219a(548, 1, null).m10219a(548, 2, null).m10219a(548, 4, null).m10219a(533, 3, null);
+        f6778b.m10219a(542, 1, null).m10219a(539, 2, f6780d).m10219a(539, 3, f6781e).m10219a(539, 4, f6782f).m10219a(539, 5, f6783g).m10219a(539, 6, f6784h).m10219a(539, 7, f6785i).m10219a(539, 8, f6786j).m10219a(539, 9, f6788l).m10219a(539, 10, f6789m).m10219a(539, 11, f6791o).m10219a(539, 12, f6792p).m10219a(539, 13, f6793q).m10219a(539, 14, f6794r).m10219a(539, 15, f6795s).m10219a(539, 16, f6796t).m10219a(539, 17, f6790n).m10219a(539, 18, f6797u).m10219a(539, 19, f6798v).m10219a(539, 20, f6799w).m10219a(539, 21, f6801y).m10219a(539, 22, f6800x).m10219a(539, 23, f6787k);
+        f6779c.m10219a(539, 1, f6778b);
+        f6802z.m10219a(1051, 1, f6776A);
+        f6776A.m10219a(1051, 1, f6778b);
+    }
+}

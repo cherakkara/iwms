@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="@color/ola_black" android:clickable="true" android:layout_width="-1" android:layout_height="-1" android:weightSum="1.0">
+    <ListView android:id="@id/listView" android:layout_width="-1" android:layout_height="0dp" android:listSelector="0x106000d" android:divider="0x106000d" android:dividerHeight="0dp" android:choiceMode="1" android:layout_weight="0.9" />
+</LinearLayout>
